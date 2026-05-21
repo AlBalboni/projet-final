@@ -23,7 +23,7 @@ const BookListItem = ({ book }) => {
           className="text-blue-500 mb-2 mr-2 hover:text-blue-900 cursor-pointer"
           onClick={() => setShowFullDesc(() => !showFullDesc)}
         >
-          {showFullDesc ? "Moins" : "Plus"}
+          {showFullDesc ? "Show less" : "Show more"}
         </button>
 
         <h3 className="text-blue-500 mb-2">{book.pageCount} pages</h3>
@@ -39,7 +39,7 @@ const BookListItem = ({ book }) => {
             to={`/books/${book.id}`}
             className="h-[36px] bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
-            Lire plus
+            Read more
           </Link>
         </div>
       </div>

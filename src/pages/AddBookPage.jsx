@@ -13,35 +13,15 @@ const AddBookPage = () => {
             </h2>
 
             <div className="mb-4">
-              <label
-                htmlFor="type"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                Type of book
-              </label>
-              <select
-                id="type"
-                name="type"
-                className="border rounded w-full py-2 px-3"
-                required
-              >
-                <option value="Temps-Plein">Temps plein</option>
-                <option value="Mi-Temps">Mi-temps</option>
-                <option value="Télétravail">Télétravail</option>
-                <option value="Stage">Stage</option>
-              </select>
-            </div>
-
-            <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">
-                Titre
+                Title
               </label>
               <input
                 type="text"
                 id="title"
                 name="title"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="ex: Développeur..."
+                placeholder="ex: Dune..."
                 required
               />
               {errors?.title && <p className="text-red-500 text-sm">{errors.title}</p>}
@@ -64,81 +44,14 @@ const AddBookPage = () => {
             </div>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">Lieu</label>
+              <label className="block text-gray-700 font-bold mb-2">Language</label>
               <input
                 type="text"
-                id="location"
-                name="location"
+                id="language"
+                name="language"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Emplacement Entreprise"
+                placeholder="Language"
                 required
-              />
-            </div>
-
-            <h3 className="text-2xl mb-5">Information entreprise</h3>
-
-            <div className="mb-4">
-              <label
-                htmlFor="company"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                Nom de l'entreprise
-              </label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                className="border rounded w-full py-2 px-3"
-                placeholder="Nom de l'entreprise"
-              />
-            </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="company_description"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                Description de l'entreprise
-              </label>
-              <textarea
-                id="company_description"
-                name="company_description"
-                className="border rounded w-full py-2 px-3"
-                rows="4"
-                placeholder="Que fait l'entreprise?"
-              ></textarea>
-            </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="contact_email"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                Email de contact
-              </label>
-              <input
-                type="email"
-                id="contact_email"
-                name="contact_email"
-                className="border rounded w-full py-2 px-3"
-                placeholder="email"
-                required
-              />
-            </div>
-
-            <div className="mb-4">
-              <label
-                htmlFor="contact_phone"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                Téléphone
-              </label>
-              <input
-                type="tel"
-                id="contact_phone"
-                name="contact_phone"
-                className="border rounded w-full py-2 px-3"
-                placeholder="téléphone"
               />
             </div>
 

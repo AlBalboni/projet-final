@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Crime and Punishment",
       "genre": "Psychological Fiction",
       "language": "Russian",
@@ -11,7 +11,7 @@
       "pageCount": 671
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Maus",
       "genre": "Drama, Graphic Novel",
       "language": "English",
