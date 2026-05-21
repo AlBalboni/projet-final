@@ -5,13 +5,13 @@ const NotFoundPage = () => {
   return (
     <section className="text-center flex flex-col justify-center items-center h-96">
       <FaExclamationTriangle className="text-yellow-400 text-6xl mb-4" />
-      <h1 className="text-6xl font-bold mb-4">404 Page non trouvée</h1>
-      <p className="text-xl mb-5">Cette page n'existe pas</p>
+      <h1 className="text-6xl font-bold mb-4">404 Page not found!!</h1>
+      <p className="text-xl mb-5">This page does not exist</p>
       <Link
         to="/"
-        className="text-white bg-red-700 hover:bg-red-900 rounded-md px-3 py-2 mt-4"
+        className="text-white bg-blue-700 hover:bg-blue-900 rounded-md px-3 py-2 mt-4"
       >
-        Retour
+        Return
       </Link>
     </section>
   );

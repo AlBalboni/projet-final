@@ -1,13 +1,13 @@
 import Hero from "../components/Hero";
 import CardContainer from "../components/CardContainer";
-import FilmList from "../components/FilmList";
+import BookList from "../components/BookList";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
       <CardContainer />
-      <FilmList isHome />
+      <BookList isHome />
     </>
   );
 };

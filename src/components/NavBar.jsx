@@ -8,27 +8,27 @@ const NavBar = () => {
       : "text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2";
 
   return (
-    <nav className="bg-red-700 border-b border-red-500">
+    <nav className="bg-blue-700 border-b border-blue-500">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             {/* <!-- Logo --> */}
             <Link className="flex flex-shrink-0 items-center mr-4" to="/">
-              <img className="h-10 w-auto" src={logo} alt="FilmNow" />
+              <img className="h-10 w-auto" src={logo} alt="Now" />
               <span className="hidden md:block text-white text-2xl font-bold ml-2">
-                FilmNow
+                BookNow
               </span>
             </Link>
             <div className="md:ml-auto">
               <div className="flex space-x-2">
                 <NavLink to="/" className={linkClass}>
-                  Acceuil
+                  Home
                 </NavLink>
-                <NavLink to="/films" className={linkClass}>
-                  Films
+                <NavLink to="/books" className={linkClass}>
+                  Books
                 </NavLink>
-                <NavLink to="/add-film" className={linkClass}>
-                  Ajouter films
+                <NavLink to="/add-books" className={linkClass}>
+                  Add books
                 </NavLink>
               </div>
             </div>

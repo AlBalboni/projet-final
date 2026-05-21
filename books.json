@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Crime and Punishment",
+      "genre": "Psychological Fiction",
+      "language": "Russian",
+      "description": "",
+      "Century": "19th Century",
+      "author": "Fyodor Dostoevsky",
+      "pageCount": 671
+    },
+    {
+      "id": 2,
+      "title": "Maus",
+      "genre": "Drama, Graphic Novel",
+      "language": "English",
+      "description": "",
+      "Century": "20th Century",
+      "author": "Art Spiegelman",
+      "pageCount": 368
+    }
+
+  ]
+}

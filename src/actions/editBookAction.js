@@ -1,8 +1,8 @@
 import { redirect } from "react-router-dom";
 
-const editFilmAction = async ({ request, params }) => {
+const editBookAction = async ({ request, params }) => {
   const formData = await request.formData();
-  const updatedFilm = {
+  const updatedBook = {
     title: formData.get("title"),
     description: formData.get("description"),
     BoxOffice: formData.get("BoxOffice"),
@@ -11,13 +11,13 @@ const editFilmAction = async ({ request, params }) => {
     Genre: formData.get("Genre"),
   };
 
-  await fetch(`http://localhost:8000/films/${params.id}`, {
+  await fetch(`http://localhost:8000/books/${params.id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(updatedFilm),
+    body: JSON.stringify(updatedBook),
   });
 
-  return redirect("/films");
+  return redirect("/books");
 };
 
-export default editFilmAction;
+export default editBookAction;

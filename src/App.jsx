@@ -7,13 +7,12 @@ import {
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
 import NotFoundPage from "./pages/NotFoundPage";
-import FilmPage from "./pages/FilmPage";
-import AddFilmPage from "./pages/AddFilmPage";
-import NavBar from "./components/NavBar";
-import Loader  from "./loaders/Loader";
-import EditFilmPage from "./pages/EditFilmPage";
-import editFilmAction from "./actions/editFilmAction";
-import addFilmAction from "./actions/addFilmAction";
+import BookPage from "./pages/BookPage";
+import AddBookPage from "./pages/AddBookPage";
+import Loader  from "./loaders/bookLoader";
+import EditBookPage from "./pages/EditBookPage";
+import editBookAction from "./actions/editBookAction";
+import addBookAction from "./actions/addBookAction";
 
 
 const App = () => {
@@ -21,19 +20,19 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/films" element={<FilmPage />}/>
+        <Route path="/books" element={<BookPage />}/>
         <Route
-         path="/films/:id"
+         path="/books/:id"
          loader={Loader}
          errorElement={<NotFoundPage />}
         />
-      <Route path="/add-film" element={<AddFilmPage />} action={addFilmAction} />
+      <Route path="/add-books" element={<AddBookPage />} action={addBookAction} />
       <Route
-        path="/edit-films/:id"
-        element={<EditFilmPage />}
+        path="/edit-books/:id"
+        element={<EditBookPage />}
         loader={Loader}
         errorElement={<NotFoundPage />}
-        action={editFilmAction}
+        action={editBookAction}
       />  
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
