@@ -1,6 +1,8 @@
-import { Form } from "react-router-dom";
+import { Form, useActionData } from "react-router-dom";
 
 const AddBookPage = () => {
+  const actionsData = useActionData();
+  const errors = actionsData?.error;
   return (
     <section className="bg-blue-50">
       <div className="container m-auto max-w-2xl py-24">
@@ -42,6 +44,7 @@ const AddBookPage = () => {
                 placeholder="ex: Développeur..."
                 required
               />
+              {errors?.title && <p className="text-red-500 text-sm">{errors.title}</p>}
             </div>
 
             <div className="mb-4">

@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
 
 const recupBooks = async ({ isHome }) => {
+  const BASE_URL = import.meta.env.VITE_API_URL;
   const apiUrl = isHome
-    ? "http://localhost:8000/books?_limit=3"
-    : "http://localhost:8000/books";
+    ? `${BASE_URL}/books?limit=3`
+    : `${BASE_URL}/books`;
   const response = await fetch(apiUrl);
-  if (!response.ok) throw new Error("Serveur error...");
+  if (!response.ok) throw new Error("Server error...");
   return await response.json();
 };
 
@@ -27,11 +28,11 @@ const filteredData = data.filter((book) => book.title.toLowerCase().includes(sea
     <section className="bg-blue-50 px-4 py-10">
       <div className="container-xl lg:container m-auto">
         <h2 className="text-3xl font-bold text-blue-500 mb-6 text-center">
-          {isHome ? "Books récents" : "Liste des books"}
+          {isHome ? "Recent Books" : "List of books"}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {loading && <Spinner loading={loading} />}
-          {error && <p>Erreur: {error}</p>}
+          {error && <p>Error: {error}</p>}
           {!error &&
             !loading &&
             filteredData.map((book) => <BookListItem key={book.id} book={book} />)}
