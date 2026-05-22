@@ -169,7 +169,16 @@
       "century": "20th",
       "pageCount": 464,
       "description": ""
+    },
+    {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genre": "Science Fiction",
+      "language": "English",
+      "century": "20th",
+      "pageCount": "566",
+      "description": "Spice is the most valued material in the universe, the only planet where it can be found is DUNE. House Atreides are the new rulers of this planet, but everything is going to change...",
+      "id": 18
     }
-
   ]
 }
