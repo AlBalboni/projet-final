@@ -6,13 +6,14 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
-import NotFoundPage from "./pages/NotFoundPage";
 import BookPage from "./pages/BookPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import BookDetailPage from "./pages/BookDetailPage";
+import bookLoader  from "./loaders/bookLoader";
 import AddBookPage from "./pages/AddBookPage";
-import Loader  from "./loaders/bookLoader";
+import addBookAction from "./actions/addBookAction";
 import EditBookPage from "./pages/EditBookPage";
 import editBookAction from "./actions/editBookAction";
-import addBookAction from "./actions/addBookAction";
 
 
 const App = () => {
@@ -23,14 +24,15 @@ const App = () => {
         <Route path="/books" element={<BookPage />}/>
         <Route
          path="/books/:id"
-         loader={Loader}
+          element={<BookDetailPage />}
+         loader={bookLoader}
          errorElement={<NotFoundPage />}
         />
       <Route path="/add-books" element={<AddBookPage />} action={addBookAction} />
       <Route
-        path="/edit-books/:id"
+        path="/edit-book/:id"
         element={<EditBookPage />}
-        loader={Loader}
+        loader={bookLoader}
         errorElement={<NotFoundPage />}
         action={editBookAction}
       />  
