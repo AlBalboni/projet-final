@@ -40,7 +40,7 @@ const BookDetailPage = () => {
             {/* <!-- Sidebar --> */}
             <aside>
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-                <h3 className="text-xl font-bold mb-6">Gestion</h3>
+                <h3 className="text-xl font-bold mb-6">Modify book</h3>
                 
                 <Link to={`/edit-book/${data.id}`}
                   className="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"

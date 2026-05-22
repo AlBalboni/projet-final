@@ -13,7 +13,9 @@ const data = useLoaderData();
             </h2>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">
+              <label 
+                htmlFor="title"
+                className="block text-gray-700 font-bold mb-2">
                 Title
               </label>
               <input
@@ -26,6 +28,87 @@ const data = useLoaderData();
                 defaultValue={data.title}
               />
             </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Author</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Author of the book"
+                required
+                defaultValue={data.author}
+              />
+            </div>
+
+            <div>
+              <label
+              className="block text-gray-700 font-bold mb-2"
+              >
+                Genre
+              </label>  
+              <select
+                id="genre"
+                name="genre"
+                className="border rounded w-full py-2 px-3"
+                required
+                defaultValue={data.genre}
+              >
+                <option value="">Select a genre</option>
+                <option value="Psychological Fiction">Psychological Fiction</option>
+                <option value="Graphic Novel">Graphic Novel</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Historical">Historical</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Biography">Biography</option>
+                <option value="Poetry">Poetry</option>
+              </select>
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Language</label>
+              <input
+                type="text"
+                id="language"
+                name="language"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Original language of the book"
+                required
+                defaultValue={data.language}
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Century</label>
+              <input
+                type="text"
+                id="century"
+                name="century"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Release century of the book"
+                required
+                defaultValue={data.century}
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Pages</label>
+              <input
+                type="number"
+                id="pageCount"
+                name="pageCount"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Number of pages"
+                required
+                defaultValue={data.pageCount}
+              />
+            </div>  
 
             <div className="mb-4">
               <label
@@ -42,20 +125,7 @@ const data = useLoaderData();
                 placeholder="Description of the book..."
                 defaultValue={data.description}
               ></textarea>
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">Language</label>
-              <input
-                type="text"
-                id="language"
-                name="language"
-                className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Original language of the book"
-                required
-                defaultValue={data.language}
-              />
-            </div>
+            </div>     
 
             <div>
               <button
