@@ -14,9 +14,9 @@ const BookListItem = ({ book }) => {
     <div className="bg-white rounded-xl shadow-md relative">
       <div className="p-4">
         <div className="mb-6">
-          <div className="text-blue-900 my-2 font-semibold">{book.genre}</div>
+          <div className="text-blue-800 my-2 font-semibold">{book.genre}</div>
           <h3 className="text-xl font-bold">{book.title}</h3>
-          <h4 className="text-gray-500 mb-2">Published by {book.author} in the {book.century} Century</h4>
+          <h4 className="text-gray-700 mb-2">Published by {book.author} in the {book.century} Century</h4>
         </div>
 
         <div className="mb-5">{description}</div>
@@ -27,7 +27,7 @@ const BookListItem = ({ book }) => {
           {showFullDesc ? "Show less" : "Show more"}
         </button> 
 
-        <h3 className="text-blue-500 mb-2">{book.pageCount} pages</h3>
+        <h3 className="text-gray-800 mb-2">{book.pageCount} pages</h3>
 
         <div className="border border-gray-100 mb-5"></div>
 
