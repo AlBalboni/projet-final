@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const BookListItem = ({ book }) => {
   const [showFullDesc, setShowFullDesc] = useState(false);
 
-  let description = book.description;
-  if (!showFullDesc) {
+  let description = book.description || "";
+  if (!showFullDesc && description.length > 40) {
     description = description.substring(0, 40) + "...";
   }
 

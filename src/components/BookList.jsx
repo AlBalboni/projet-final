@@ -4,12 +4,20 @@ import Spinner from "./Spinner";
 
 const recupBooks = async ({ isHome }) => {
   const BASE_URL = import.meta.env.VITE_API_URL;
-  const apiUrl = isHome
-    ? `${BASE_URL}/books?_sort=id&_order=desc`
-    : `${BASE_URL}/books`;
-  const response = await fetch(apiUrl);
+
+  const response = await fetch(`${BASE_URL}/books`);
+
   if (!response.ok) throw new Error("Server error...");
-  return await response.json();
+
+  const books = await response.json();
+
+  // To  show the most recent books properly on netlify we have to use this
+  //sort function to avoid server errors
+  if (isHome) {
+    return books.sort((a, b) => Number(b.id) - Number(a.id));
+  }
+
+  return books;
 };
 
 const BookList = ({ isHome = false, search="" }) => {

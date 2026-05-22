@@ -1,74 +1,74 @@
 {
   "books": [
     {
-      "id": 1,
       "title": "Crime and Punishment",
       "author": "Fyodor Dostoevsky",
       "genre": "Psychological Fiction",
       "language": "Russian",
       "century": "19th",
       "pageCount": 671,
-      "description": ""
+      "description": "",
+	"id": "1"
     },
     {
-      "id": 2,
       "title": "Maus",
       "author": "Art Spiegelman",
       "genre": "Drama, Graphic Novel",
       "language": "English",
       "century": "20th",
       "pageCount": 368,
-      "description": ""
+      "description": "",
+	"id": "2"
     },
     {
-      "id": 3,
       "title": "Moby Dick",
       "author": "Herman Melville",
       "genre": "Adventure, Fiction",
       "language": "English",
       "century": "19th",
       "pageCount": 635,
-      "description": ""
+      "description": "",
+	"id": "3"
     },
     {
-      "id": 4,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": "Tragedy, Fiction",
       "language": "English",
       "century": "20th",
       "pageCount": 180,
-      "description": ""
+      "description": "",
+	"id": "4"
     },
     {
-      "id": 5,
       "title": "War and Peace",
       "author": "Leo Tolstoy",
       "genre": "Historical Fiction",
       "language": "Russian",
       "century": "19th",
       "pageCount": 1225,
-      "description": ""
+      "description": "",
+	"id": "5"
     },
     {
-      "id": 6,
       "title": "The Odyssey",
       "author": "Homer",
       "genre": "Epic Poetry",
       "language": "Ancient Greek",
       "century": "8th BC",
       "pageCount": 541,
-      "description": ""
+      "description": "",
+	"id": "6"
     },
     {
-      "id": 7,
       "title": "The Count of Monte Cristo",
       "author": "Alexandre Dumas",
       "genre": "Adventure, Historical Fiction",
       "language": "French",
       "century": "19th",
       "pageCount": 1276,
-      "description": ""
+      "description": "",
+	"id": "7"
     },
     {
       "title": "Don Quixote",
@@ -78,97 +78,97 @@
       "century": "16th",
       "pageCount": "600",
       "description": "A man falls in madness after reading fantasy books.",
-      "id": 8
+      "id": "8"
     },
     {
-      "id": 9,
       "title": "Watchmen",
       "author": "Alan Moore",
       "genre": "Graphic Novel",
       "language": "English",
       "century": "20th",
       "pageCount": "400",
-      "description": "Superheroes are washed."
+      "description": "Superheroes are washed.",
+	"id": "9"
     },
     {
-      "id": 10,
       "title": "The Divine Comedy",
       "author": "Dante Alighieri",
       "genre": "Epic Poetry",
       "language": "Italian",
       "century": "14th",
       "pageCount": 798,
-      "description": ""
+      "description": "",
+	"id": "10"
     },
     {
-      "id": 11,
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "genre": "Philosophical Fiction",
       "language": "Russian",
       "century": "19th",
       "pageCount": 824,
-      "description": ""
+      "description": "",
+	"id": "11"
     },
     {
-      "id": 12,
       "title": "The Iliad",
       "author": "Homer",
       "genre": "Epic Poetry",
       "language": "Ancient Greek",
       "century": "8th BC",
       "pageCount": 683,
-      "description": ""
+      "description": "",
+	"id": "12"
     },
     {
-      "id": 13,
       "title": "The Stranger",
       "author": "Albert Camus",
       "genre": "Philosophical Fiction",
       "language": "French",
       "century": "20th",
       "pageCount": 123,
-      "description": ""
+      "description": "",
+	    "id": "13"
     },
     {
-      "id": 14,
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
       "genre": "Absurdist Fiction",
       "language": "German",
       "century": "20th",
       "pageCount": 201,
-      "description": ""
+      "description": "",
+	    "id": "14"
     },
     {
-      "id": 15,
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
       "genre": "Philosophical Fiction",
       "language": "English",
       "century": "19th",
       "pageCount": 254,
-      "description": ""
+      "description": "",
+	    "id": "15"
     },
     {
-      "id": 16,
       "title": "1984",
       "author": "George Orwell",
       "genre": "Dystopian Fiction",
       "language": "English",
       "century": "20th",
       "pageCount": 328,
-      "description": ""
+      "description": "",
+	    "id": "16"
     },
     {
-      "id": 17,
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
       "genre": "Historical Fiction",
       "language": "English",
       "century": "20th",
       "pageCount": 464,
-      "description": ""
+      "description": "",
+	    "id": "17"
     },
     {
       "title": "Dune",
@@ -178,7 +178,7 @@
       "century": "20th",
       "pageCount": "566",
       "description": "Spice is the most valued material in the universe, the only planet where it can be found is DUNE. House Atreides are the new rulers of this planet, but everything is going to change...",
-      "id": 18
+      "id": "18"
     }
   ]
 }

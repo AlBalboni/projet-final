@@ -9,7 +9,7 @@ import MainLayout from "./layouts/MainLayout";
 import BookPage from "./pages/BookPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import BookDetailPage from "./pages/BookDetailPage";
-import bookLoader  from "./loaders/bookLoader";
+import bookLoader from "./loaders/bookLoader";
 import AddBookPage from "./pages/AddBookPage";
 import addBookAction from "./actions/addBookAction";
 import EditBookPage from "./pages/EditBookPage";
@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/books" element={<BookPage />}/>
         <Route
          path="/books/:id"
-          element={<BookDetailPage />}
+         element={<BookDetailPage />}
          loader={bookLoader}
          errorElement={<NotFoundPage />}
         />
