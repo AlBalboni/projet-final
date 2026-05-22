@@ -16,6 +16,7 @@ const BookListItem = ({ book }) => {
         <div className="mb-6">
           <div className="text-gray-600 my-2">{book.genre}</div>
           <h3 className="text-xl font-bold">{book.title}</h3>
+          <h4 className="text-gray-500 mb-2">{book.author}</h4>
         </div>
 
         <div className="mb-5">{description}</div>
@@ -25,6 +26,8 @@ const BookListItem = ({ book }) => {
         >
           {showFullDesc ? "Show less" : "Show more"}
         </button>
+
+        <h4 className="text-gray-500 mb-2">{book.century}</h4> 
 
         <h3 className="text-blue-500 mb-2">{book.pageCount} pages</h3>
 

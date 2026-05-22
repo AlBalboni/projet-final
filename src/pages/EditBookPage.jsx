@@ -39,7 +39,7 @@ const data = useLoaderData();
                 name="description"
                 className="border rounded w-full py-2 px-3"
                 rows="4"
-                placeholder="toute info relative au job..."
+                placeholder="Description of the book..."
                 defaultValue={data.description}
               ></textarea>
             </div>
@@ -51,7 +51,7 @@ const data = useLoaderData();
                 id="language"
                 name="language"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Language"
+                placeholder="Original language of the book"
                 required
                 defaultValue={data.language}
               />

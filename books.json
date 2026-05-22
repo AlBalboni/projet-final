@@ -3,23 +3,81 @@
     {
       "id": "1",
       "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
       "genre": "Psychological Fiction",
       "language": "Russian",
-      "description": "",
-      "Century": "19th Century",
-      "author": "Fyodor Dostoevsky",
-      "pageCount": 671
+      "century": "19th Century",
+      "pageCount": 671,
+      "description": ""
     },
     {
       "id": "2",
       "title": "Maus",
+      "author": "Art Spiegelman",
       "genre": "Drama, Graphic Novel",
       "language": "English",
-      "description": "",
-      "Century": "20th Century",
-      "author": "Art Spiegelman",
-      "pageCount": 368
+      "century": "20th Century",
+      "pageCount": 368,
+      "description": ""
+    },
+    {
+      "id": "3",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "genre": "Adventure, Fiction",
+      "language": "English",
+      "century": "19th Century",
+      "pageCount": 635,
+      "description": ""
+    },
+    {
+      "id": "4",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Tragedy, Fiction",
+      "language": "English",
+      "century": "20th Century",
+      "pageCount": 180,
+      "description": ""
+    },
+    {
+      "id": "5",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "genre": "Historical Fiction",
+      "language": "Russian",
+      "century": "19th Century",
+      "pageCount": 1225,
+      "description": ""
+    },
+    {
+      "id": "6",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "genre": "Epic Poetry",
+      "language": "Ancient Greek",
+      "century": "8th Century BC",
+      "pageCount": 541,
+      "description": ""
+    },
+    {
+      "id": "7",
+      "title": "The Count of Monte Cristo",
+      "author": "Alexandre Dumas",
+      "genre": "Adventure, Historical Fiction",
+      "language": "French",
+      "century": "19th Century",
+      "pageCount": 1276,
+      "description": ""
+    },
+    {
+      "title": "Don Quixote",
+      "description": "A man falls in madness after reading fantasy books.",
+      "BoxOffice": null,
+      "Country": null,
+      "Director": null,
+      "Genre": null,
+      "id": "Mr5ABKO"
     }
-
   ]
 }

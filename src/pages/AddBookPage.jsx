@@ -13,7 +13,9 @@ const AddBookPage = () => {
             </h2>
 
             <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">
+              <label 
+                htmlFor="title"
+                className="block text-gray-700 font-bold mb-2">
                 Title
               </label>
               <input
@@ -28,6 +30,82 @@ const AddBookPage = () => {
             </div>
 
             <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Author</label>
+              <input
+                type="text"
+                id="author"
+                name="author"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Author of the book"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+              className="block text-gray-700 font-bold mb-2"
+              >
+                Genre
+              </label>  
+              <select
+                id="genre"
+                name="genre"
+                className="border rounded w-full py-2 px-3"
+                required
+              >
+                <option value="">Select a genre</option>
+                <option value="Psychological Fiction">Psychological Fiction</option>
+                <option value="Graphic Novel">Graphic Novel</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Historical">Historical</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Biography">Biography</option>
+                <option value="Poetry">Poetry</option>
+              </select>
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Language</label>
+              <input
+                type="text"
+                id="language"
+                name="language"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Original language of the book"
+                required
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Century</label>
+              <input
+                type="text"
+                id="century"
+                name="century"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Release century of the book"
+                required
+              />
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-gray-700 font-bold mb-2">Pages</label>
+              <input
+                type="number"
+                id="pageCount"
+                name="pageCount"
+                className="border rounded w-full py-2 px-3 mb-2"
+                placeholder="Number of pages"
+                required
+              />
+            </div>  
+
+            <div className="mb-4">
               <label
                 htmlFor="description"
                 className="block text-gray-700 font-bold mb-2"
@@ -39,21 +117,9 @@ const AddBookPage = () => {
                 name="description"
                 className="border rounded w-full py-2 px-3"
                 rows="4"
-                placeholder="toute info relative au job..."
+                placeholder="Description of the book..."
               ></textarea>
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-gray-700 font-bold mb-2">Language</label>
-              <input
-                type="text"
-                id="language"
-                name="language"
-                className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Language"
-                required
-              />
-            </div>
+            </div>     
 
             <div>
               <button
