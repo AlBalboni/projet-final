@@ -7,16 +7,16 @@ const BookListItem = ({ book }) => {
 
   let description = book.description;
   if (!showFullDesc) {
-    description = description.substring(0, 90) + "...";
+    description = description.substring(0, 40) + "...";
   }
 
   return (
     <div className="bg-white rounded-xl shadow-md relative">
       <div className="p-4">
         <div className="mb-6">
-          <div className="text-gray-600 my-2">{book.genre}</div>
+          <div className="text-blue-900 my-2 font-semibold">{book.genre}</div>
           <h3 className="text-xl font-bold">{book.title}</h3>
-          <h4 className="text-gray-500 mb-2">Published by {book.author} in the {book.century}</h4>
+          <h4 className="text-gray-500 mb-2">Published by {book.author} in the {book.century} Century</h4>
         </div>
 
         <div className="mb-5">{description}</div>

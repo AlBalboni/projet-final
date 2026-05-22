@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Card from "./Card";
 
 const CardContainer = () => {
@@ -10,25 +11,25 @@ const CardContainer = () => {
             <p className="mt-2 mb-4">
               Analyze the most popular books and find your next book to read
             </p>
-            <a
-              href="/books.html"
+            <Link
+              to="/books"
               className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
             >
               Browse Books
-            </a>
+            </Link>
           </Card>
 
           <Card bg="bg-blue-100">
-            <h2 className="text-2xl font-bold">For Employers</h2>
+            <h2 className="text-2xl font-bold">For editors</h2>
             <p className="mt-2 mb-4">
               Add the books you want to see and the
             </p>
-            <a
-              href="/add-books.html"
+            <Link
+              to="/add-books"
               className="inline-block bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600"
             >
               Add a book
-            </a>
+            </Link>
           </Card>
         </div>
       </div>

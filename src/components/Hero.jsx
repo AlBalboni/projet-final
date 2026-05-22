@@ -1,6 +1,6 @@
 const Hero = ({
-  title = "Cherchez ce que vous voulez!",
-  subTitle = "parmis toutes les options possibles...",
+  title = "Find your next book to read!",
+  subTitle = "Look up the most popular books and lose yourself in the greatest stories ever told",
 }) => {
   return (
     <section className="bg-blue-700 py-20 mb-4">

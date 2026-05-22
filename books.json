@@ -1,92 +1,94 @@
 {
   "books": [
     {
-      "id": "1",
+      "id": 1,
       "title": "Crime and Punishment",
       "author": "Fyodor Dostoevsky",
       "genre": "Psychological Fiction",
       "language": "Russian",
-      "century": "19th Century",
+      "century": "19th",
       "pageCount": 671,
       "description": ""
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "Maus",
       "author": "Art Spiegelman",
       "genre": "Drama, Graphic Novel",
       "language": "English",
-      "century": "20th Century",
+      "century": "20th",
       "pageCount": 368,
       "description": ""
     },
     {
-      "id": "3",
+      "id": 3,
       "title": "Moby Dick",
       "author": "Herman Melville",
       "genre": "Adventure, Fiction",
       "language": "English",
-      "century": "19th Century",
+      "century": "19th",
       "pageCount": 635,
       "description": ""
     },
     {
-      "id": "4",
+      "id": 4,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": "Tragedy, Fiction",
       "language": "English",
-      "century": "20th Century",
+      "century": "20th",
       "pageCount": 180,
       "description": ""
     },
     {
-      "id": "5",
+      "id": 5,
       "title": "War and Peace",
       "author": "Leo Tolstoy",
       "genre": "Historical Fiction",
       "language": "Russian",
-      "century": "19th Century",
+      "century": "19th",
       "pageCount": 1225,
       "description": ""
     },
     {
-      "id": "6",
+      "id": 6,
       "title": "The Odyssey",
       "author": "Homer",
       "genre": "Epic Poetry",
       "language": "Ancient Greek",
-      "century": "8th Century BC",
+      "century": "8th BC",
       "pageCount": 541,
       "description": ""
     },
     {
-      "id": "7",
+      "id": 7,
       "title": "The Count of Monte Cristo",
       "author": "Alexandre Dumas",
       "genre": "Adventure, Historical Fiction",
       "language": "French",
-      "century": "19th Century",
+      "century": "19th",
       "pageCount": 1276,
       "description": ""
     },
     {
       "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "genre": "Adventure",
+      "language": "Spanish",
+      "century": "16th",
+      "pageCount": "600",
       "description": "A man falls in madness after reading fantasy books.",
-      "BoxOffice": null,
-      "Country": null,
-      "Director": null,
-      "Genre": null,
-      "id": "Mr5ABKO"
+      "id": 8
     },
     {
+      "id": 9,
       "title": "Watchmen",
-      "description": "Superheroes are washed.",
-      "BoxOffice": null,
-      "Country": null,
-      "Director": null,
-      "Genre": null,
-      "id": "gN_8RWy"
+      "author": "Alan Moore",
+      "genre": "Graphic Novel",
+      "language": "English",
+      "century": "20th",
+      "pageCount": "400",
+      "description": "Superheroes are washed."
     }
   ]
 }
