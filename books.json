@@ -89,6 +89,87 @@
       "century": "20th",
       "pageCount": "400",
       "description": "Superheroes are washed."
+    },
+    {
+      "id": 10,
+      "title": "The Divine Comedy",
+      "author": "Dante Alighieri",
+      "genre": "Epic Poetry",
+      "language": "Italian",
+      "century": "14th",
+      "pageCount": 798,
+      "description": ""
+    },
+    {
+      "id": 11,
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "genre": "Philosophical Fiction",
+      "language": "Russian",
+      "century": "19th",
+      "pageCount": 824,
+      "description": ""
+    },
+    {
+      "id": 12,
+      "title": "The Iliad",
+      "author": "Homer",
+      "genre": "Epic Poetry",
+      "language": "Ancient Greek",
+      "century": "8th BC",
+      "pageCount": 683,
+      "description": ""
+    },
+    {
+      "id": 13,
+      "title": "The Stranger",
+      "author": "Albert Camus",
+      "genre": "Philosophical Fiction",
+      "language": "French",
+      "century": "20th",
+      "pageCount": 123,
+      "description": ""
+    },
+    {
+      "id": 14,
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "genre": "Absurdist Fiction",
+      "language": "German",
+      "century": "20th",
+      "pageCount": 201,
+      "description": ""
+    },
+    {
+      "id": 15,
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "genre": "Philosophical Fiction",
+      "language": "English",
+      "century": "19th",
+      "pageCount": 254,
+      "description": ""
+    },
+    {
+      "id": 16,
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian Fiction",
+      "language": "English",
+      "century": "20th",
+      "pageCount": 328,
+      "description": ""
+    },
+    {
+      "id": 17,
+      "title": "The Grapes of Wrath",
+      "author": "John Steinbeck",
+      "genre": "Historical Fiction",
+      "language": "English",
+      "century": "20th",
+      "pageCount": 464,
+      "description": ""
     }
+
   ]
 }
