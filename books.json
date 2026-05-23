@@ -3,7 +3,8 @@
     {
       "title": "Crime and Punishment",
       "author": "Fyodor Dostoevsky",
-      "genre": "Psychological Fiction",
+      "genre": ["Psychological Fiction"
+    ],
       "language": "Russian",
       "century": "19th",
       "pageCount": 671,
@@ -13,7 +14,9 @@
     {
       "title": "Maus",
       "author": "Art Spiegelman",
-      "genre": "Drama, Graphic Novel",
+      "genre": ["Drama", 
+      "Graphic Novel"
+    ],
       "language": "English",
       "century": "20th",
       "pageCount": 368,
@@ -23,7 +26,7 @@
     {
       "title": "Moby Dick",
       "author": "Herman Melville",
-      "genre": "Adventure, Fiction",
+      "genre": ["Adventure", "Fiction"],
       "language": "English",
       "century": "19th",
       "pageCount": 635,
@@ -33,7 +36,7 @@
     {
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
-      "genre": "Tragedy, Fiction",
+      "genre": ["Tragedy", "Fiction"],
       "language": "English",
       "century": "20th",
       "pageCount": 180,
@@ -43,7 +46,7 @@
     {
       "title": "War and Peace",
       "author": "Leo Tolstoy",
-      "genre": "Historical Fiction",
+      "genre": ["Historical Fiction"],
       "language": "Russian",
       "century": "19th",
       "pageCount": 1225,
@@ -53,7 +56,7 @@
     {
       "title": "The Odyssey",
       "author": "Homer",
-      "genre": "Epic Poetry",
+      "genre": ["Epic Poetry"],
       "language": "Ancient Greek",
       "century": "8th BC",
       "pageCount": 541,
@@ -63,7 +66,7 @@
     {
       "title": "The Count of Monte Cristo",
       "author": "Alexandre Dumas",
-      "genre": "Adventure, Historical Fiction",
+      "genre": ["Adventure", "Historical Fiction"],
       "language": "French",
       "century": "19th",
       "pageCount": 1276,
@@ -73,7 +76,7 @@
     {
       "title": "Don Quixote",
       "author": "Miguel de Cervantes",
-      "genre": "Adventure",
+      "genre": ["Adventure"],
       "language": "Spanish",
       "century": "16th",
       "pageCount": "600",
@@ -83,7 +86,7 @@
     {
       "title": "Watchmen",
       "author": "Alan Moore",
-      "genre": "Graphic Novel",
+      "genre": ["Graphic Novel"],
       "language": "English",
       "century": "20th",
       "pageCount": "400",
@@ -93,7 +96,7 @@
     {
       "title": "The Divine Comedy",
       "author": "Dante Alighieri",
-      "genre": "Epic Poetry",
+      "genre": ["Epic Poetry"],
       "language": "Italian",
       "century": "14th",
       "pageCount": 798,
@@ -103,7 +106,7 @@
     {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
-      "genre": "Philosophical Fiction",
+      "genre": ["Philosophical Fiction"],
       "language": "Russian",
       "century": "19th",
       "pageCount": 824,
@@ -113,7 +116,7 @@
     {
       "title": "The Iliad",
       "author": "Homer",
-      "genre": "Epic Poetry",
+      "genre": ["Epic Poetry"],
       "language": "Ancient Greek",
       "century": "8th BC",
       "pageCount": 683,
@@ -123,7 +126,7 @@
     {
       "title": "The Stranger",
       "author": "Albert Camus",
-      "genre": "Philosophical Fiction",
+      "genre": ["Philosophical Fiction"],
       "language": "French",
       "century": "20th",
       "pageCount": 123,
@@ -133,7 +136,7 @@
     {
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
-      "genre": "Absurdist Fiction",
+      "genre": ["Absurdist Fiction"],
       "language": "German",
       "century": "20th",
       "pageCount": 201,
@@ -143,7 +146,7 @@
     {
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
-      "genre": "Philosophical Fiction",
+      "genre": ["Philosophical Fiction"],
       "language": "English",
       "century": "19th",
       "pageCount": 254,
@@ -153,7 +156,7 @@
     {
       "title": "1984",
       "author": "George Orwell",
-      "genre": "Dystopian Fiction",
+      "genre": ["Dystopian Fiction"],
       "language": "English",
       "century": "20th",
       "pageCount": 328,
@@ -163,7 +166,7 @@
     {
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
-      "genre": "Historical Fiction",
+      "genre": ["Historical Fiction"],
       "language": "English",
       "century": "20th",
       "pageCount": 464,
@@ -173,25 +176,24 @@
     {
       "title": "Dune",
       "author": "Frank Herbert",
-      "genre": "Science Fiction",
+      "genre": [
+        "Science Fiction"
+      ],
       "language": "English",
       "century": "20th",
       "pageCount": "566",
       "description": "Spice is the most valued material in the universe, the only planet where it can be found is DUNE. House Atreides are the new rulers of this planet, but everything is going to change...",
       "id": "18"
     },
-    {
-      "title": "bleh",
-      "author": "bluh",
-      "genre": [
-        "Thriller",
-        "Horror"
-      ],
-      "language": "Euskera",
-      "century": "22th",
-      "pageCount": "6767",
-      "description": "Testing",
-      "id": "kT74bBz"
-    }
+  {
+    "title": "The Boy with the Cukoo-Clock Heart",
+    "author": "Matthias Malzieu",
+    "genre": ["Romance"],
+    "language": "French ",
+    "century": "21th",
+    "pageCount": "160",
+    "description": "Edinburgh, 1874: Jack is born in the coldest day ever. To save his Life his heart his replaced by a cukoo-clock. He may live in condition that he doesnt fall in love or else his Little heart will stop.\n\nIB<3",
+    "id": "19"
+  }
   ]
 }
