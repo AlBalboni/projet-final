@@ -1,8 +1,27 @@
 import BookList from "../components/BookList";
-import { useState } from "react";
-//add toasts
+import { useState, useEffect } from "react";
+//toasts
+import { toast } from "react-toastify";
+
 const BookPage = () => {
   const [search, setSearch] = useState("");
+
+useEffect(() => {
+  const toastData = sessionStorage.getItem("toast");
+
+  if (toastData) {
+    const { message, type } = JSON.parse(toastData);
+
+    if (type === "success") {
+      toast.success(message);
+    } else if (type === "error") {
+      toast.error(message);
+    }
+
+    sessionStorage.removeItem("toast");
+  }
+}, []);
+
   return (
 
     <>

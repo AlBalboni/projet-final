@@ -17,7 +17,6 @@ import editBookAction from "./actions/editBookAction";
 import deleteBookAction from "./actions/deleteBookAction";
 import FavoriteBooksPage from "./pages/FavoriteBooksPage";
 
-
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(

@@ -1,4 +1,5 @@
 import { redirect } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const addBookAction = async ({ request }) => {
   const BASE_URL = import.meta.env.VITE_API_URL;
@@ -30,7 +31,7 @@ const addBookAction = async ({ request }) => {
     body: JSON.stringify(newBook),
   });
 
-  sessionStorage.setItem("toast", "Book added successfully!");
+  toast.success("Book added successfully");
   return redirect("/books");
 };
 

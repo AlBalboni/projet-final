@@ -2,6 +2,7 @@ import { Outlet, useNavigation } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Spinner from "../components/Spinner";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MainLayout = () => {
   const navigation = useNavigation();
