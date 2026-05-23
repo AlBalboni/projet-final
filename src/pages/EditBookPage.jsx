@@ -1,13 +1,26 @@
 import { Form } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
+import { useState } from "react";
 
 const EditBookPage = () => {
 const data = useLoaderData();
-  return (
-    <section className="bg-red-50">
-      <div className="container m-auto max-w-2xl py-24">
-        <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
-          <Form method="put">
+const [genres, setGenres] = useState(data.genre || [""]);
+
+const handleGenreChange = (index, value) => {
+  const updatedGenres = [...genres];
+  updatedGenres[index] = value;
+  setGenres(updatedGenres);
+};
+
+const addGenreField = () => {
+  setGenres([...genres, ""]);
+};
+
+return (
+  <section className="bg-red-50">
+    <div className="container m-auto max-w-2xl py-24">
+      <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
+        <Form method="put">
             <h2 className="text-3xl text-center font-semibold mb-6">
               Modify Book
             </h2>
@@ -42,33 +55,70 @@ const data = useLoaderData();
               />
             </div>
 
-            <div>
-              <label
-              className="block text-gray-700 font-bold mb-2"
-              >
-                Genre
-              </label>  
+            <div className="mb-4">
+
+            <label className="block text-gray-700 font-bold mb-2">
+               Genre
+            </label>
+
+            {genres.map((genre, index) => (
               <select
-                id="genre"
+                key={index}
                 name="genre"
-                className="border rounded w-full py-2 px-3"
-                required
-                defaultValue={data.genre}
+                value={genre}
+                onChange={(e) =>
+                handleGenreChange(index, e.target.value)
+               }
+              className="border rounded w-full py-2 px-3 mb-2"
+              required={index === 0}
               >
-                <option value="">Select a genre</option>
-                <option value="Psychological Fiction">Psychological Fiction</option>
-                <option value="Graphic Novel">Graphic Novel</option>
-                <option value="Adventure">Adventure</option>
-                <option value="Science Fiction">Science Fiction</option>
-                <option value="Fantasy">Fantasy</option>
-                <option value="Historical">Historical</option>
-                <option value="Horror">Horror</option>
-                <option value="Romance">Romance</option>
-                <option value="Thriller">Thriller</option>
-                <option value="Mystery">Mystery</option>
-                <option value="Biography">Biography</option>
-                <option value="Poetry">Poetry</option>
-              </select>
+            <option value="">Select a genre</option>
+              <option value="Psychological Fiction">
+                Psychological Fiction
+              </option>
+              <option value="Graphic Novel">
+                Graphic Novel
+              </option>
+              <option value="Adventure">
+                Adventure
+              </option>
+              <option value="Science Fiction">
+                Science Fiction
+              </option>
+              <option value="Fantasy">
+                Fantasy
+              </option>
+              <option value="Historical">
+                Historical
+              </option>
+              <option value="Horror">
+                Horror
+              </option>
+              <option value="Romance">
+                Romance
+              </option>
+              <option value="Thriller">
+                Thriller
+              </option>
+              <option value="Mystery">
+                Mystery
+              </option>
+              <option value="Biography">
+                Biography
+              </option>
+              <option value="Poetry">
+                Poetry
+              </option>
+          </select>
+              ))}
+
+              <button
+                type="button"
+                onClick={addGenreField}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+                >
+                Add another genre
+              </button>
             </div>
 
             <div className="mb-4">

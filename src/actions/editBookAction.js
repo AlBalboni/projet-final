@@ -6,7 +6,7 @@ const editBookAction = async ({ request, params }) => {
   const updatedBook = {
     title: formData.get("title"),
     author: formData.get("author"),
-    genre: formData.get("genre"),
+    genre: formData.getAll("genre"),
     language: formData.get("language"),
     century: formData.get("century"),
     pageCount: formData.get("pageCount"),

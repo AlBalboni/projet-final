@@ -43,7 +43,12 @@ const toggleFavorite = () => {
       </button>
       <div className="p-4">
         <div className="mb-6">
-          <div className="text-blue-800 my-2 font-semibold">{book.genre}</div>
+          <div className="text-blue-800 my-2 font-semibold">
+            {/* i converted genres to array to allow multiple genres. so if there are multiple it will print a comma between.*/}
+              {Array.isArray(book.genre) 
+              ? book.genre.join(", ") 
+              : book.genre}
+            </div>
           <h3 className="text-xl font-bold">{book.title}</h3>
           <h4 className="text-gray-700 mb-2">Published by {book.author} in the {book.century} Century</h4>
         </div>
