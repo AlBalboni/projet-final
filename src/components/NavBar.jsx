@@ -27,6 +27,9 @@ const NavBar = () => {
                 <NavLink to="/books" className={linkClass}>
                   Books
                 </NavLink>
+                <NavLink to="/favorite-books" className={linkClass}>
+                  Favorites
+                </NavLink>
                 <NavLink to="/add-books" className={linkClass}>
                   Add books
                 </NavLink>

@@ -14,6 +14,7 @@ import AddBookPage from "./pages/AddBookPage";
 import addBookAction from "./actions/addBookAction";
 import EditBookPage from "./pages/EditBookPage";
 import editBookAction from "./actions/editBookAction";
+import FavoriteBooksPage from "./pages/FavoriteBooksPage";
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
          errorElement={<NotFoundPage />}
         />
       <Route path="/add-books" element={<AddBookPage />} action={addBookAction} />
+      <Route path="/favorite-books" element={<FavoriteBooksPage />} />
       <Route
         path="/edit-book/:id"
         element={<EditBookPage />}

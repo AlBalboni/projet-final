@@ -1,9 +1,33 @@
 import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { FaHeart, FaRegHeart } from "react-icons/fa6";
 
 const BookListItem = ({ book }) => {
   const [showFullDesc, setShowFullDesc] = useState(false);
+  const favorites =
+  JSON.parse(localStorage.getItem("favorites")) || [];
+
+const isFavorite = favorites.includes(book.id.toString());
+
+const toggleFavorite = () => {
+  let updatedFavorites;
+
+  if (isFavorite) {
+    updatedFavorites = favorites.filter(
+      (id) => id !== book.id.toString()
+    );
+  } else {
+    updatedFavorites = [...favorites, book.id.toString()];
+  }
+
+  localStorage.setItem(
+    "favorites",
+    JSON.stringify(updatedFavorites)
+  );
+
+  window.location.reload();
+};
 
   let description = book.description || "";
   if (!showFullDesc && description.length > 40) {
@@ -12,6 +36,11 @@ const BookListItem = ({ book }) => {
 
   return (
     <div className="bg-white rounded-xl shadow-md relative">
+      <button
+        onClick={toggleFavorite}
+        className="absolute top-4 right-4 text-red-500 text-2xl cursor-pointer">
+        {isFavorite ? <FaHeart /> : <FaRegHeart />}
+      </button>
       <div className="p-4">
         <div className="mb-6">
           <div className="text-blue-800 my-2 font-semibold">{book.genre}</div>
