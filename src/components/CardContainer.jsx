@@ -7,9 +7,9 @@ const CardContainer = () => {
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
           <Card>
-            <h2 className="text-2xl font-bold">Look up your favorite books</h2>
+            <h2 className="text-2xl font-bold">All our books</h2>
             <p className="mt-2 mb-4">
-              Analyze the most popular books and find your next book to read
+              Submerse tourself into our collection of timeless classics.
             </p>
             <Link
               to="/books"
@@ -22,7 +22,7 @@ const CardContainer = () => {
           <Card bg="bg-blue-100">
             <h2 className="text-2xl font-bold">For editors</h2>
             <p className="mt-2 mb-4">
-              Add the books you want to see and the
+              Add your own books to our collection and share your love for literature with your friends and family.
             </p>
             <Link
               to="/add-books"
