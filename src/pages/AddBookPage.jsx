@@ -72,41 +72,71 @@ const AddBookPage = () => {
               required={index === 0}
               >
             <option value="">Select a genre</option>
-              <option value="Psychological Fiction">
-                Psychological Fiction
-              </option>
-              <option value="Graphic Novel">
-                Graphic Novel
-              </option>
               <option value="Adventure">
                 Adventure
-              </option>
-              <option value="Science Fiction">
-                Science Fiction
-              </option>
-              <option value="Fantasy">
-                Fantasy
-              </option>
-              <option value="Historical">
-                Historical
-              </option>
-              <option value="Horror">
-                Horror
-              </option>
-              <option value="Romance">
-                Romance
-              </option>
-              <option value="Thriller">
-                Thriller
-              </option>
-              <option value="Mystery">
-                Mystery
               </option>
               <option value="Biography">
                 Biography
               </option>
+              <option value="Classic">
+                Classic
+              </option>
+              <option value="Comedy">
+                Comedy
+              </option>
+              <option value="Crime">
+                Crime
+              </option>
+              <option value="Dystopian">
+                Dystopian
+              </option>
+              <option value="Epic">
+                Epic
+              </option>
+              <option value="Fantasy">
+                Fantasy
+              </option>
+              <option value="Fiction">
+                Fiction
+              </option>
+              <option value="Graphic Novel">
+                Graphic Novel
+              </option>
+              <option value="Historical">
+                Historical
+              </option>
+              <option value="Historical Fiction">
+                Historical Fiction
+              </option>
+              <option value="Horror">
+                Horror
+              </option>
+              <option value="Mystery">
+                Mystery
+              </option>
+              <option value="Philosophical">
+                Philosophical
+              </option>
               <option value="Poetry">
                 Poetry
+              </option>
+              <option value="Religious">
+                Religious
+              </option>
+              <option value="Realism">
+                Realism
+              </option>
+              <option value="Romance">
+                Romance
+              </option>
+              <option value="Satire">
+                Satire
+              </option>
+              <option value="Science Fiction">
+                Science Fiction
+              </option>
+              <option value="Thriller">
+                Thriller
               </option>
           </select>
               ))}

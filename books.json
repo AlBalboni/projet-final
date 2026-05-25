@@ -8,21 +8,21 @@
       ],
       "language": "Russian",
       "century": "19th",
-      "pageCount": 671,
-      "description": "",
+      "pageCount": "671",
+      "description": "A Russian student decides he does not want to pay rent.",
       "id": "1"
     },
     {
       "title": "Maus",
       "author": "Art Spiegelman",
       "genre": [
-        "Drama",
+        "Historical",
         "Graphic Novel"
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": 368,
-      "description": "",
+      "pageCount": "368",
+      "description": "Cats and mice don’t go along. Sometimes to understand cruelty we must make it seem childish.",
       "id": "2"
     },
     {
@@ -30,25 +30,25 @@
       "author": "Herman Melville",
       "genre": [
         "Adventure",
-        "Fiction"
+        "Fantasy"
       ],
       "language": "English",
       "century": "19th",
-      "pageCount": 635,
-      "description": "",
+      "pageCount": "635",
+      "description": "A man will sacrifice everything to capture the biggest whale the world has ever seen. This epic quest will forever change the head of our protagonist.",
       "id": "3"
     },
     {
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": [
-        "Tragedy",
-        "Fiction"
+        "Psychological Fiction",
+        "Mystery"
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": 180,
-      "description": "",
+      "pageCount": "180",
+      "description": "A rich man seeks love. Altough being able to buy everything love can not be bought.",
       "id": "4"
     },
     {
@@ -59,7 +59,7 @@
       ],
       "language": "Russian",
       "century": "19th",
-      "pageCount": 1225,
+      "pageCount": "1225",
       "description": "",
       "id": "5"
     },
@@ -67,11 +67,12 @@
       "title": "The Odyssey",
       "author": "Homer",
       "genre": [
-        "Epic Poetry"
+        "Epic",
+        "Poetry"
       ],
       "language": "Ancient Greek",
       "century": "8th BC",
-      "pageCount": 541,
+      "pageCount": "541",
       "description": "",
       "id": "6"
     },
@@ -84,7 +85,7 @@
       ],
       "language": "French",
       "century": "19th",
-      "pageCount": 1276,
+      "pageCount": "1276",
       "description": "",
       "id": "7"
     },
@@ -104,8 +105,7 @@
       "title": "Watchmen",
       "author": "Alan Moore",
       "genre": [
-        "Graphic Novel",
-        "Thriller"
+        "Graphic Novel"
       ],
       "language": "English",
       "century": "20th",
@@ -117,11 +117,12 @@
       "title": "The Divine Comedy",
       "author": "Dante Alighieri",
       "genre": [
-        "Epic Poetry"
+        "Epic",
+        "Poetry"
       ],
       "language": "Italian",
       "century": "14th",
-      "pageCount": 798,
+      "pageCount": "798",
       "description": "",
       "id": "10"
     },
@@ -133,7 +134,7 @@
       ],
       "language": "Russian",
       "century": "19th",
-      "pageCount": 824,
+      "pageCount": "824",
       "description": "",
       "id": "11"
     },
@@ -141,11 +142,12 @@
       "title": "The Iliad",
       "author": "Homer",
       "genre": [
-        "Epic Poetry"
+        "Epic",
+        "Poetry"
       ],
       "language": "Ancient Greek",
       "century": "8th BC",
-      "pageCount": 683,
+      "pageCount": "683",
       "description": "",
       "id": "12"
     },
@@ -153,24 +155,26 @@
       "title": "The Stranger",
       "author": "Albert Camus",
       "genre": [
-        "Philosophical Fiction"
+        "Psychological Fiction",
+        "Poetry"
       ],
       "language": "French",
       "century": "20th",
-      "pageCount": 123,
-      "description": "",
+      "pageCount": "123",
+      "description": "Mom died today, or maybe yesterday.\nA broken man will have to deal with loss and sorrow in a unexpected way. ",
       "id": "13"
     },
     {
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
       "genre": [
-        "Absurdist Fiction"
+        "Psychological Fiction",
+        "Horror"
       ],
       "language": "German",
       "century": "20th",
-      "pageCount": 201,
-      "description": "",
+      "pageCount": "201",
+      "description": "Gregor Samsa wakes up in his bed transformed into an hideous insect. ",
       "id": "14"
     },
     {
@@ -181,7 +185,7 @@
       ],
       "language": "English",
       "century": "19th",
-      "pageCount": 254,
+      "pageCount": "254",
       "description": "",
       "id": "15"
     },
@@ -193,7 +197,7 @@
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": 328,
+      "pageCount": "328",
       "description": "",
       "id": "16"
     },
@@ -201,19 +205,20 @@
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
       "genre": [
-        "Adventure"
+        "Historical Fiction"
       ],
       "language": "English",
       "century": "20th",
       "pageCount": "464",
-      "description": "dint jnow\n",
+      "description": "",
       "id": "17"
     },
     {
       "title": "Dune",
       "author": "Frank Herbert",
       "genre": [
-        "Science Fiction"
+        "Science Fiction",
+        "Fantasy"
       ],
       "language": "English",
       "century": "20th",
@@ -234,40 +239,168 @@
       "id": "19"
     },
     {
-      "title": "mlvbdfl",
-      "author": "vlkdsv",
+      "title": "Ubik",
+      "author": "Phillip K. Dick",
       "genre": [
-        "Historical"
+        "Science Fiction"
       ],
-      "language": "vdvs",
-      "century": "432",
-      "pageCount": "322",
-      "description": "vdm vlfdvl",
-      "id": "MvNVFCM"
+      "language": "English ",
+      "century": "20th",
+      "pageCount": "264",
+      "description": "In a distant near future some humans have the ability to read minds. An old man will die and time will no longer be the same.",
+      "id": "20"
     },
     {
-      "title": "fkg",
-      "author": "fergmm",
+      "title": "The name of the rose",
+      "author": "Umberto Eco",
       "genre": [
-        "Fantasy"
+        "Fantasy",
+        "Thriller",
+        "Mystery"
       ],
-      "language": "kfd",
-      "century": "43",
-      "pageCount": "3423",
-      "description": "fdbfbdfbdfs",
-      "id": "YO3ydKK"
+      "language": "Italian",
+      "century": "20th",
+      "pageCount": "340",
+      "description": "A man of god is handed a crime in an abbey. Alongside is young apprentice he will have to solve this mysterious crime.",
+      "id": "21"
     },
     {
-      "title": "vdjs",
-      "author": "vsdv",
+      "title": "Les Misérables",
+      "author": "Victor Hugo",
       "genre": [
+        "Historical",
         "Adventure"
       ],
-      "language": "cvdsv",
-      "century": "4321",
-      "pageCount": "4324",
-      "description": "vd kv",
-      "id": "jUQTot9"
+      "language": "French",
+      "century": "19th",
+      "pageCount": "1462",
+      "description": "Life in 19th century France is not easy. People will fight for what is worth to change their miserables life.",
+      "id": "22"
+    },
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "genre": [
+        "Horror",
+        "Mystery"
+      ],
+      "language": "German",
+      "century": "20th",
+      "pageCount": "196",
+      "description": "A man is set to face a trial for a crime that he didn’t commit. Moreover a crime that does not exist. ",
+      "id": "23"
+    },
+    {
+      "title": "One Hundred years of Solitude",
+      "author": "Gabriel García Márquez",
+      "genre": [
+        "Historical",
+        "Romance"
+      ],
+      "language": "Spanish",
+      "century": "20th",
+      "pageCount": "422",
+      "description": "Despair and solitude will follow a south American family for 7 generations.\nTheir lives are connected by something more than only blood.",
+      "id": "24"
+    },
+    {
+      "title": "Persepolis",
+      "author": "Marjane Satrapi",
+      "genre": [
+        "Graphic Novel",
+        "Biography"
+      ],
+      "language": "French",
+      "century": "21th",
+      "pageCount": "234",
+      "description": "A half Iranian half French woman will experience difficulties in life. From the regime of the Shah to the revolutionary uprise in Iran. It is hard to fit in when you are seen as foreigner in your own country.",
+      "id": "25"
+    },
+    {
+      "title": "Fictions",
+      "author": "Jorge Luis Borges",
+      "genre": [
+        "Poetry"
+      ],
+      "language": "Spanish",
+      "century": "20th",
+      "pageCount": "210",
+      "description": "Compilation of poems and stories of the Argentinian writer Borges.",
+      "id": "26"
+    },
+    {
+      "title": "A Catcher in the Rye",
+      "author": "J. D. Salinger",
+      "genre": [
+        "Psychological Fiction"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "224",
+      "description": "A young boy will suffer of some troublesome difficulties. Beware of your idols.",
+      "id": "27"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genre": [
+        "Science Fiction",
+        "Romance"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "256",
+      "description": "Romance is dead now that humans are no longer born, but created. They are assigned a class and are heavily drugged with Soma as well as Hypnopedia. But hey, you will not die of sickness and never feel real love. This golden cage of a world will be shaken by the presence of a weird primitive man.",
+      "id": "28"
+    },
+    {
+      "title": "The Decameron",
+      "author": "Giovanni Boccaccio",
+      "genre": [
+        "Historical",
+        "Adventure"
+      ],
+      "language": "Italian",
+      "century": "14th",
+      "pageCount": "909",
+      "description": "A compilation of stories of the 14th century Italy. Beggars, nuns, princes and common folk all have life’s that will somehow intertwine themselves. ",
+      "id": "29"
+    },
+    {
+      "title": "Bible (Old Testament)",
+      "author": "Moses",
+      "genre": [
+        "Religious"
+      ],
+      "language": "Hebrew",
+      "century": "2th BC",
+      "pageCount": "1200",
+      "description": "Sacred texts of the Abrahamic religions. In total more of 24 books written in more than a thousand years.",
+      "id": "-BDavhX"
+    },
+    {
+      "title": "Bible (New Testament)",
+      "author": "the Apostles",
+      "genre": [
+        "Religious"
+      ],
+      "language": "Greek",
+      "century": "1th ",
+      "pageCount": "400",
+      "description": "The story of Jesus Christ. Sacred texts for the Christian and Muslim people. 27 books written in almost 50 years.",
+      "id": "C429AZh"
+    },
+    {
+      "title": "Quran",
+      "author": "Muhammad",
+      "genre": [
+        "Religious"
+      ],
+      "language": "Arabic",
+      "century": "7th",
+      "pageCount": "604",
+      "description": "The central sacred text of Islam. Revealed by Muhammad in over23 years through the angel Gabriel.",
+      "id": "Mr2gIEP"
     }
   ]
 }
