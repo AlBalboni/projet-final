@@ -31,14 +31,25 @@ const BookList = ({ isHome = false, search="" }) => {
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
   }, []);
-const filteredData = data.filter((book) => book.title.toLowerCase().includes(search.toLowerCase()))
-.slice(0, isHome ? 4 : data.length);
+
+  const filteredData = data.filter((book) => 
+    book.title.toLowerCase().includes(search.toLowerCase())||
+    book.author.toLowerCase().includes(search.toLowerCase()))
+    .slice(0, isHome ? 4 : data.length);
+  const resultCount = filteredData.length;
   return (
     <section className="bg-blue-50 px-4 py-10">
       <div className="container-xl lg:container m-auto">
-        <h2 className="text-3xl font-bold text-blue-500 mb-6 text-center">
+        <div className="relative flex items-center justify-end mb-6">
+          <h2 className="absolute left-1/2 -translate-x-1/2 text-3xl font-bold text-blue-500 mb-6">
           {isHome ? "Recent Books" : "List of books"}
-        </h2>
+          </h2>
+          {!isHome && (
+            <p className="text-gray-600 font-semibold">
+              {resultCount} result{resultCount !== 1 ? "s" : ""}
+              </p>
+            )}
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-15">
           {loading && <Spinner loading={loading} />}
           {error && <p>Error: {error}</p>}

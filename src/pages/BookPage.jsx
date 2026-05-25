@@ -25,16 +25,16 @@ const BookPage = () => {
 
     setSearchParams({});
   }
-}, []);
+ }, []);
 
   return (
 
     <>
     <div className="flex justify-center px-4 py-6 bg-white">
-      <input type="text" placeholder="Search for a book..." 
+      <input type="text" placeholder="Search for book or author..."
       value={search}
       onChange={(e) => setSearch(e.target.value)}
-      className="border rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      className="w-full max-w-xl border rounded-lg py-2 px-4 focus:outline-none focus:ring-3 focus:ring-blue-500" />
     </div>
   <BookList search={search} />
   </>
