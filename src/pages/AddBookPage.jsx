@@ -120,6 +120,9 @@ const AddBookPage = () => {
               <option value="Poetry">
                 Poetry
               </option>
+              <option value="Psychological">
+                Psychological
+              </option>
               <option value="Religious">
                 Religious
               </option>

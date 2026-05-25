@@ -4,7 +4,7 @@
       "title": "Crime and Punishment",
       "author": "Fyodor Dostoevsky",
       "genre": [
-        "Psychological Fiction"
+        "Psychological"
       ],
       "language": "Russian",
       "century": "19th",
@@ -42,7 +42,7 @@
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": [
-        "Psychological Fiction",
+        "Psychological",
         "Mystery"
       ],
       "language": "English",
@@ -130,7 +130,7 @@
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "genre": [
-        "Philosophical Fiction"
+        "Philosophical"
       ],
       "language": "Russian",
       "century": "19th",
@@ -155,7 +155,7 @@
       "title": "The Stranger",
       "author": "Albert Camus",
       "genre": [
-        "Psychological Fiction",
+        "Psychological",
         "Poetry"
       ],
       "language": "French",
@@ -168,7 +168,7 @@
       "title": "The Metamorphosis",
       "author": "Franz Kafka",
       "genre": [
-        "Psychological Fiction",
+        "Psychological",
         "Horror"
       ],
       "language": "German",
@@ -181,7 +181,7 @@
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
       "genre": [
-        "Philosophical Fiction"
+        "Philosophical"
       ],
       "language": "English",
       "century": "19th",
@@ -193,7 +193,7 @@
       "title": "1984",
       "author": "George Orwell",
       "genre": [
-        "Dystopian Fiction"
+        "Dystopian"
       ],
       "language": "English",
       "century": "20th",
@@ -376,7 +376,7 @@
       "century": "2th BC",
       "pageCount": "1200",
       "description": "Sacred texts of the Abrahamic religions. In total more of 24 books written in more than a thousand years.",
-      "id": "-BDavhX"
+      "id": "30"
     },
     {
       "title": "Bible (New Testament)",
@@ -388,7 +388,7 @@
       "century": "1th ",
       "pageCount": "400",
       "description": "The story of Jesus Christ. Sacred texts for the Christian and Muslim people. 27 books written in almost 50 years.",
-      "id": "C429AZh"
+      "id": "31"
     },
     {
       "title": "Quran",
@@ -400,7 +400,7 @@
       "century": "7th",
       "pageCount": "604",
       "description": "The central sacred text of Islam. Revealed by Muhammad in over23 years through the angel Gabriel.",
-      "id": "Mr2gIEP"
+      "id": "32"
     }
   ]
 }
