@@ -1,5 +1,4 @@
 import { redirect } from "react-router-dom";
-import { toast } from "react-toastify";
 
 const deleteBookAction = async ({ params }) => {
   const BASE_URL = import.meta.env.VITE_API_URL;
@@ -10,7 +9,14 @@ const deleteBookAction = async ({ params }) => {
     method: "DELETE",
   });
 
- toast.warn("Book deleted");
+sessionStorage.setItem(
+  "toast",
+  JSON.stringify({
+    message: "Book deleted successfully!",
+    type: "info",
+  })
+);
+
  return redirect("/books");
 };
 

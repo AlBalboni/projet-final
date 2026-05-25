@@ -9,7 +9,7 @@ const CardContainer = () => {
           <Card>
             <h2 className="text-2xl font-bold">All our books</h2>
             <p className="mt-2 mb-4">
-              Submerse tourself into our collection of timeless classics.
+              Submerse yourself into our collection of timeless classics.
             </p>
             <Link
               to="/books"

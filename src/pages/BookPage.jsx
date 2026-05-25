@@ -1,24 +1,27 @@
 import BookList from "../components/BookList";
 import { useState, useEffect } from "react";
-//toasts
+{/*toasts*/ }
 import { toast } from "react-toastify";
+import { useSearchParams } from "react-router-dom";
 
 const BookPage = () => {
   const [search, setSearch] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
 
-useEffect(() => {
-  const toastData = sessionStorage.getItem("toast");
+  useEffect(() => {
+  const message = searchParams.get("toast");
+  const type = searchParams.get("type");
 
-  if (toastData) {
-    const { message, type } = JSON.parse(toastData);
-
+  if (message) {
     if (type === "success") {
       toast.success(message);
     } else if (type === "error") {
       toast.error(message);
+    } else if (type === "info") {
+      toast.info(message);
     }
 
-    sessionStorage.removeItem("toast");
+    setSearchParams({});
   }
 }, []);
 

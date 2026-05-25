@@ -1,14 +1,13 @@
 import { redirect } from "react-router-dom";
-import { toast } from "react-toastify";
 
 const addBookAction = async ({ request }) => {
   const BASE_URL = import.meta.env.VITE_API_URL;
   const formData = await request.formData();
 
   const errors = {};
-  const title = formData.get("title");
-  if (!title || title.trim().length <3){
-    errors.title ="Title must have at least 3 characters.";
+  const genre = formData.getAll("genre");
+  if (genre.length === 0) {
+    errors.genre = "At least one genre must be selected.";
   }
 
   if (Object.keys(errors).length > 0) {
@@ -31,7 +30,13 @@ const addBookAction = async ({ request }) => {
     body: JSON.stringify(newBook),
   });
 
-  toast.success("Book added successfully");
+  sessionStorage.setItem(
+    "toast",
+    JSON.stringify({
+      message: "Book added successfully!",
+      type: "info",
+    })
+  );
   return redirect("/books");
 };
 
