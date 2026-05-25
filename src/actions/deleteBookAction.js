@@ -10,7 +10,7 @@ const deleteBookAction = async ({ params }) => {
   });
 
     return redirect(
-  "/books?toast=Book deleted successfully!&type=info"
+  "/books?toast=Book deleted successfully!&type=warning"
 );
 };
 

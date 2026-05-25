@@ -31,7 +31,7 @@ const addBookAction = async ({ request }) => {
   });
 
 return redirect(
-  "/books?toast=Book updated successfully!&type=info"
+  "/books?toast=Book added successfully!&type=success"
 );
 
 };
