@@ -9,15 +9,9 @@ const deleteBookAction = async ({ params }) => {
     method: "DELETE",
   });
 
-sessionStorage.setItem(
-  "toast",
-  JSON.stringify({
-    message: "Book deleted successfully!",
-    type: "info",
-  })
+    return redirect(
+  "/books?toast=Book deleted successfully!&type=info"
 );
-
- return redirect("/books");
 };
 
 export default deleteBookAction;

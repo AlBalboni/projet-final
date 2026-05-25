@@ -30,14 +30,10 @@ const addBookAction = async ({ request }) => {
     body: JSON.stringify(newBook),
   });
 
-  sessionStorage.setItem(
-    "toast",
-    JSON.stringify({
-      message: "Book added successfully!",
-      type: "info",
-    })
-  );
-  return redirect("/books");
+return redirect(
+  "/books?toast=Book updated successfully!&type=info"
+);
+
 };
 
 export default addBookAction;
