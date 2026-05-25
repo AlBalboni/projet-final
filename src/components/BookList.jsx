@@ -20,7 +20,7 @@ const recupBooks = async ({ isHome }) => {
   return books;
 };
 
-const BookList = ({ isHome = false, search="" }) => {
+const BookList = ({ isHome = false, search="", sortGenre="" }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -32,10 +32,19 @@ const BookList = ({ isHome = false, search="" }) => {
       .finally(() => setLoading(false));
   }, []);
 
-  const filteredData = data.filter((book) => 
-    book.title.toLowerCase().includes(search.toLowerCase())||
-    book.author.toLowerCase().includes(search.toLowerCase()))
+  const filteredData = data.filter((book) => {
+    const matchesSearch = book.title.toLowerCase().includes(search.toLowerCase()) ||
+                          book.author.toLowerCase().includes(search.toLowerCase());
+    const matchesGenre = sortGenre === "" ||
+    (
+      Array.isArray(book.genre)
+        ? book.genre.includes(sortGenre)
+        : book.genre === sortGenre  
+    );
+    return matchesSearch && matchesGenre;
+  })
     .slice(0, isHome ? 4 : data.length);
+
   const resultCount = filteredData.length;
   return (
     <section className="bg-blue-50 px-4 py-10">
