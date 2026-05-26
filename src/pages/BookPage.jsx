@@ -37,134 +37,94 @@ const BookPage = () => {
   return (
 
     <>
-    <div className="flex justify-center px-4 py-6 bg-white">
-      <input type="text" placeholder="Search for book or author..."
-      value={search}
-      onChange={(e) => setSearch(e.target.value)}
-      className="w-full max-w-xl border rounded-lg py-2 px-4 focus:outline-none focus:ring-3 focus:ring-blue-500" />
-    </div>
+<div className="flex items-center justify-between gap-4 px-6 py-6 bg-white flex-wrap">
 
-    <div className="flex justify-center pb-6 bg-white relative">
-  <button
-    onClick={() => setShowOption(!showOption)}
-    className="border rounded-lg p-3 hover:bg-gray-100"
+  {/* SORTING ICON */}
+  <div className="relative">
+    <button
+      onClick={() => setShowOption(!showOption)}
+      className="border rounded-lg p-3 hover:bg-gray-100"
+    >
+      <FaBars />
+    </button>
+
+    {showOption && (
+      <div className="absolute top-14 left-0 bg-white border rounded-lg shadow-md p-3 flex flex-col gap-2 z-10">
+        <button
+          onClick={() => {
+            setSortOption("az");
+            setShowOption(false);
+          }}
+          className="hover:text-blue-500 text-left"
+        >
+          Alphabetical (A-Z)
+        </button>
+
+        <button
+          onClick={() => {
+            setSortOption("pagesAsc");
+            setShowOption(false);
+          }}
+          className="hover:text-blue-500 text-left"
+        >
+          Pages (Low to High)
+        </button>
+
+        <button
+          onClick={() => {
+            setSortOption("pagesDesc");
+            setShowOption(false);
+          }}
+          className="hover:text-blue-500 text-left"
+        >
+          Pages (High to Low)
+        </button>
+      </div>
+    )}
+  </div>
+
+  {/* SEARCH BAR */}
+  <input
+    type="text"
+    placeholder="Search for book or author..."
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+    className="flex-1 max-w-xl border rounded-lg py-2 px-4 focus:outline-none focus:ring-3 focus:ring-blue-500"
+  />
+
+  {/* GENRE FILTER */}
+  <select
+    value={sortGenre}
+    onChange={(e) => setSortGenre(e.target.value)}
+    className="border rounded-lg py-2 px-4"
   >
-    <FaBars />
-  </button>
+    <option value="">All genres</option>
+    <option value="Adventure">Adventure</option>
+    <option value="Biography">Biography</option>
+    <option value="Classic">Classic</option>
+    <option value="Comedy">Comedy</option>
+    <option value="Crime">Crime</option>
+    <option value="Dystopian">Dystopian</option>
+    <option value="Epic">Epic</option>
+    <option value="Fantasy">Fantasy</option>
+    <option value="Fiction">Fiction</option>
+    <option value="Graphic Novel">Graphic Novel</option>
+    <option value="Historical">Historical</option>
+    <option value="Historical Fiction">Historical Fiction</option>
+    <option value="Horror">Horror</option>
+    <option value="Mystery">Mystery</option>
+    <option value="Philosophical">Philosophical</option>
+    <option value="Poetry">Poetry</option>
+    <option value="Psychological">Psychological</option>
+    <option value="Religious">Religious</option>
+    <option value="Realism">Realism</option>
+    <option value="Romance">Romance</option>
+    <option value="Satire">Satire</option>
+    <option value="Science Fiction">Science Fiction</option>
+    <option value="Thriller">Thriller</option>
+  </select>
 
-  {showOption && (
-    <div className="absolute top-14 bg-white border rounded-lg shadow-md p-3 flex flex-col gap-2 z-10">
-      <button
-        onClick={() => {
-          setSortOption("az");
-          setShowOption(false);
-        }}
-        className="hover:text-blue-500 text-left"
-      >
-        Alphabetical (A-Z)
-      </button>
-
-      <button
-        onClick={() => {
-          setSortOption("pagesAsc");
-          setShowOption(false);
-        }}
-        className="hover:text-blue-500 text-left"
-      >
-        Pages (Low to High)
-      </button>
-
-      <button
-        onClick={() => {
-          setSortOption("pagesDesc");
-          setShowOption(false);
-        }}
-        className="hover:text-blue-500 text-left"
-      >
-        Pages (High to Low)
-      </button>
-    </div>
-  )}
 </div>
-
-    <div className="flex justify-center pb-6 bg-white">
-      <select
-      value={sortGenre}
-      onChange={(e) => setSortGenre(e.target.value)}
-      className="border rounded-lg py-2 px-4"
-      >
-        <option value="">All genres</option>
-              <option value="Adventure">
-                Adventure
-              </option>
-              <option value="Biography">
-                Biography
-              </option>
-              <option value="Classic">
-                Classic
-              </option>
-              <option value="Comedy">
-                Comedy
-              </option>
-              <option value="Crime">
-                Crime
-              </option>
-              <option value="Dystopian">
-                Dystopian
-              </option>
-              <option value="Epic">
-                Epic
-              </option>
-              <option value="Fantasy">
-                Fantasy
-              </option>
-              <option value="Fiction">
-                Fiction
-              </option>
-              <option value="Graphic Novel">
-                Graphic Novel
-              </option>
-              <option value="Historical">
-                Historical
-              </option>
-              <option value="Historical Fiction">
-                Historical Fiction
-              </option>
-              <option value="Horror">
-                Horror
-              </option>
-              <option value="Mystery">
-                Mystery
-              </option>
-              <option value="Philosophical">
-                Philosophical
-              </option>
-              <option value="Poetry">
-                Poetry
-              </option>
-              <option value="Psychological">
-                Psychological
-              </option>
-              <option value="Religious">
-                Religious
-              </option>
-              <option value="Realism">
-                Realism
-              </option>
-              <option value="Romance">
-                Romance
-              </option>
-              <option value="Satire">
-                Satire
-              </option>
-              <option value="Science Fiction">
-                Science Fiction
-              </option>
-              <option value="Thriller">
-                Thriller
-              </option>
-      </select>
-    </div>
   <BookList 
     search={search}
     sortGenre={sortGenre}
