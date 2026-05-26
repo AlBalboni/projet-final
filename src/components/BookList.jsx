@@ -77,10 +77,10 @@ const BookList = ({
   const resultCount = filteredData.length;
 
   return (
-    <section className="bg-blue-50 px-4 py-10">
+    <section className="bg-blue-50 px-4 py-12">
       <div className="container-xl lg:container m-auto">
 
-        <div className="relative flex items-center justify-end mb-6">
+        <div className="relative flex items-center justify-end mb-10">
           <h2 className="absolute left-1/2 -translate-x-1/2 text-3xl font-bold text-blue-500">
             {isHome ? "Recent Books" : "List of books"}
           </h2>
