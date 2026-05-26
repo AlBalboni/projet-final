@@ -21,7 +21,7 @@
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": "368",
+      "pageCount": "296",
       "description": "Cats and mice don’t go along. Sometimes to understand cruelty we must make it seem childish.",
       "id": "2"
     },
@@ -42,8 +42,9 @@
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": [
-        "Psychological",
-        "Mystery"
+        "Romance",
+        "Historical Fiction"
+
       ],
       "language": "English",
       "century": "20th",
@@ -55,12 +56,15 @@
       "title": "War and Peace",
       "author": "Leo Tolstoy",
       "genre": [
-        "Historical Fiction"
+        "Historical Fiction",
+        "Philosophical",
+        "Adventure",
+        "Epic"
       ],
       "language": "Russian",
       "century": "19th",
       "pageCount": "1225",
-      "description": "",
+      "description": "An epic novel that follows the lives of several Russian families during the Napoleonic Wars.",
       "id": "5"
     },
     {
@@ -68,12 +72,13 @@
       "author": "Homer",
       "genre": [
         "Epic",
-        "Poetry"
+        "Poetry",
+        "Adventure"
       ],
       "language": "Ancient Greek",
       "century": "8th BC",
       "pageCount": "541",
-      "description": "",
+      "description": "Odysseus, a Greek hero, embarks on a long and perilous journey home after the Trojan War. Along the way, he faces numerous challenges and encounters mythical creatures.",
       "id": "6"
     },
     {
@@ -81,12 +86,13 @@
       "author": "Alexandre Dumas",
       "genre": [
         "Adventure",
-        "Historical Fiction"
+        "Historical Fiction",
+        "Romance"
       ],
       "language": "French",
       "century": "19th",
       "pageCount": "1276",
-      "description": "",
+      "description": "A young man seeks revenge against those who wronged him.",
       "id": "7"
     },
     {
@@ -97,7 +103,7 @@
       ],
       "language": "Spanish",
       "century": "16th",
-      "pageCount": "600",
+      "pageCount": "1072",
       "description": "A man falls in madness after reading fantasy books.",
       "id": "8"
     },
@@ -105,11 +111,12 @@
       "title": "Watchmen",
       "author": "Alan Moore",
       "genre": [
-        "Graphic Novel"
+        "Graphic Novel",
+        "Dystopian"
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": "400",
+      "pageCount": "416",
       "description": "Superheroes are washed.",
       "id": "9"
     },
@@ -122,20 +129,21 @@
       ],
       "language": "Italian",
       "century": "14th",
-      "pageCount": "798",
-      "description": "",
+      "pageCount": "928",
+      "description": "An epic poem that describes the journey through the three realms of the afterlife.",
       "id": "10"
     },
     {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "genre": [
-        "Philosophical"
+        "Philosophical",
+        "Psychological"
       ],
       "language": "Russian",
       "century": "19th",
-      "pageCount": "824",
-      "description": "",
+      "pageCount": "1076",
+      "description": "A philosophical novel that explores the moral and spiritual struggles of the Karamazov family.",
       "id": "11"
     },
     {
@@ -143,12 +151,13 @@
       "author": "Homer",
       "genre": [
         "Epic",
-        "Poetry"
+        "Poetry",
+        "Adventure"
       ],
       "language": "Ancient Greek",
       "century": "8th BC",
-      "pageCount": "683",
-      "description": "",
+      "pageCount": "704",
+      "description": "An epic poem that describes the exploits of Achilles and other Greek heroes during the Trojan War.",
       "id": "12"
     },
     {
@@ -173,7 +182,7 @@
       ],
       "language": "German",
       "century": "20th",
-      "pageCount": "201",
+      "pageCount": "112",
       "description": "Gregor Samsa wakes up in his bed transformed into an hideous insect. ",
       "id": "14"
     },
@@ -186,31 +195,33 @@
       "language": "English",
       "century": "19th",
       "pageCount": "254",
-      "description": "",
+      "description": "A young man is given a portrait that ages while he remains young, leading to a tale of corruption and the consequences of vanity.",
       "id": "15"
     },
     {
       "title": "1984",
       "author": "George Orwell",
       "genre": [
-        "Dystopian"
+        "Dystopian",
+        "Science Fiction"
       ],
       "language": "English",
       "century": "20th",
       "pageCount": "328",
-      "description": "",
+      "description": "Big Brother is watching you. In a totalitarian society, the government exercises extreme control over its citizens, suppressing individuality and freedom of thought.",
       "id": "16"
     },
     {
       "title": "The Grapes of Wrath",
       "author": "John Steinbeck",
       "genre": [
-        "Historical Fiction"
+        "Historical Fiction",
+        "Romance"
       ],
       "language": "English",
       "century": "20th",
       "pageCount": "464",
-      "description": "",
+      "description": "A novel that follows the Joad family during the Great Depression.",
       "id": "17"
     },
     {
@@ -222,31 +233,33 @@
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": "566",
+      "pageCount": "412",
       "description": "Spice is the most valued material in the universe, the only planet where it can be found is DUNE. House Atreides are the new rulers of this planet, but everything is going to change...",
       "id": "18"
     },
     {
       "title": "The Boy with the Cukoo-Clock Heart",
-      "author": "Matthias Malzieu",
+      "author": "Mathias Malzieu",
       "genre": [
-        "Romance"
+        "Romance",
+        "Fantasy"
       ],
       "language": "French ",
       "century": "21th",
       "pageCount": "160",
-      "description": "Edinburgh, 1874: Jack is born in the coldest day ever. To save his Life his heart his replaced by a cukoo-clock. He may live in condition that he doesnt fall in love or else his Little heart will stop.\n\nIB<3",
+      "description": "Edinburgh, 1874: Jack is born in the coldest day ever. To save his Life his heart his replaced by a cukoo-clock. He may live in condition that he doesnt fall in love or else his Little heart will stop.\n\nIB<3 moi aussi je t'aime hihi",
       "id": "19"
     },
     {
       "title": "Ubik",
       "author": "Phillip K. Dick",
       "genre": [
-        "Science Fiction"
+        "Science Fiction",
+        "Dystopian"
       ],
       "language": "English ",
       "century": "20th",
-      "pageCount": "264",
+      "pageCount": "224",
       "description": "In a distant near future some humans have the ability to read minds. An old man will die and time will no longer be the same.",
       "id": "20"
     },
@@ -254,13 +267,13 @@
       "title": "The name of the rose",
       "author": "Umberto Eco",
       "genre": [
-        "Fantasy",
         "Thriller",
-        "Mystery"
+        "Mystery",
+        "Historical Fiction"
       ],
       "language": "Italian",
       "century": "20th",
-      "pageCount": "340",
+      "pageCount": "608",
       "description": "A man of god is handed a crime in an abbey. Alongside is young apprentice he will have to solve this mysterious crime.",
       "id": "21"
     },
@@ -269,11 +282,12 @@
       "author": "Victor Hugo",
       "genre": [
         "Historical",
-        "Adventure"
+        "Adventure",
+        "Romance"
       ],
       "language": "French",
       "century": "19th",
-      "pageCount": "1462",
+      "pageCount": "1456",
       "description": "Life in 19th century France is not easy. People will fight for what is worth to change their miserables life.",
       "id": "22"
     },
@@ -286,7 +300,7 @@
       ],
       "language": "German",
       "century": "20th",
-      "pageCount": "196",
+      "pageCount": "255",
       "description": "A man is set to face a trial for a crime that he didn’t commit. Moreover a crime that does not exist. ",
       "id": "23"
     },
@@ -295,11 +309,12 @@
       "author": "Gabriel García Márquez",
       "genre": [
         "Historical",
-        "Romance"
+        "Romance",
+        "Fantasy"
       ],
       "language": "Spanish",
       "century": "20th",
-      "pageCount": "422",
+      "pageCount": "432",
       "description": "Despair and solitude will follow a south American family for 7 generations.\nTheir lives are connected by something more than only blood.",
       "id": "24"
     },
@@ -312,7 +327,7 @@
       ],
       "language": "French",
       "century": "21th",
-      "pageCount": "234",
+      "pageCount": "160",
       "description": "A half Iranian half French woman will experience difficulties in life. From the regime of the Shah to the revolutionary uprise in Iran. It is hard to fit in when you are seen as foreigner in your own country.",
       "id": "25"
     },
@@ -320,11 +335,12 @@
       "title": "Fictions",
       "author": "Jorge Luis Borges",
       "genre": [
-        "Poetry"
+        "Poetry",
+        "Fantasy"
       ],
       "language": "Spanish",
       "century": "20th",
-      "pageCount": "210",
+      "pageCount": "192",
       "description": "Compilation of poems and stories of the Argentinian writer Borges.",
       "id": "26"
     },
@@ -332,7 +348,8 @@
       "title": "A Catcher in the Rye",
       "author": "J. D. Salinger",
       "genre": [
-        "Psychological Fiction"
+        "Psychological",
+        "Fiction"
       ],
       "language": "English",
       "century": "20th",
@@ -349,7 +366,7 @@
       ],
       "language": "English",
       "century": "20th",
-      "pageCount": "256",
+      "pageCount": "288",
       "description": "Romance is dead now that humans are no longer born, but created. They are assigned a class and are heavily drugged with Soma as well as Hypnopedia. But hey, you will not die of sickness and never feel real love. This golden cage of a world will be shaken by the presence of a weird primitive man.",
       "id": "28"
     },
@@ -357,12 +374,14 @@
       "title": "The Decameron",
       "author": "Giovanni Boccaccio",
       "genre": [
-        "Historical",
-        "Adventure"
+        "Historical Fiction",
+        "Adventure",
+        "Romance",
+        "Comedy"
       ],
       "language": "Italian",
       "century": "14th",
-      "pageCount": "909",
+      "pageCount": "1072",
       "description": "A compilation of stories of the 14th century Italy. Beggars, nuns, princes and common folk all have life’s that will somehow intertwine themselves. ",
       "id": "29"
     },
@@ -376,7 +395,7 @@
       "century": "2th BC",
       "pageCount": "1200",
       "description": "Sacred texts of the Abrahamic religions. In total more of 24 books written in more than a thousand years.",
-      "id": "30"
+      "id": "A"
     },
     {
       "title": "Bible (New Testament)",
@@ -388,7 +407,7 @@
       "century": "1th ",
       "pageCount": "400",
       "description": "The story of Jesus Christ. Sacred texts for the Christian and Muslim people. 27 books written in almost 50 years.",
-      "id": "31"
+      "id": "B"
     },
     {
       "title": "Quran",
@@ -400,7 +419,185 @@
       "century": "7th",
       "pageCount": "604",
       "description": "The central sacred text of Islam. Revealed by Muhammad in over23 years through the angel Gabriel.",
+      "id": "C"
+    },
+    {
+      "title": "In Search of Lost Time",
+      "author": "Marcel Proust",
+      "genre": [
+        "Philosophical",
+        "Psychological",
+        "Epic"
+      ],
+      "language": "French",
+      "century": "20th",
+      "pageCount": "4215",
+      "description": "A monumental work exploring memory, time, and human experience.",
+      "id": "30"
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "genre": [
+        "Fantasy",
+        "Adventure",
+        "Epic"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "1178",
+      "description": "One ring to rule them all. An epic fantasy trilogy composed of three volumes: The Fellowship of the Ring, The Two Towers, and The Return of the King.",
+      "id": "31"
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": [
+        "Adventure",
+        "Fantasy",
+        "Philosophical"
+      ],
+      "language": "Portuguese",
+      "century": "20th",
+      "pageCount": "208",
+      "description": "A young shepherd named Santiago embarks on a journey to find a hidden treasure, learning valuable life lessons along the way.",
       "id": "32"
+    },
+    {
+      "title": "The Housemaid",
+      "author": "Freida McFadden",
+      "genre": [
+        "Thriller",
+        "Psychological"
+      ],
+      "language": "English",
+      "century": "21th",
+      "pageCount": "303",
+      "description": "A psychological thriller that follows the story of a housemaid who becomes entangled in a dangerous web of secrets and lies while working for a wealthy family.",
+      "id": "33"
+    },
+    {
+      "title": "The Lion, the Witch and the Wardrobe",
+      "author": "C.S. Lewis",
+      "genre": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "208",
+      "description": "The first published book in the Chronicles of Narnia series, following four British children who are transported to the land of Narnia through a magical wardrobe.",
+      "id": "34"
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "genre": [
+        "Satire",
+        "Philosophical"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "112",
+      "description": "A satirical allegory that uses a group of farm animals to critique the Russian Revolution and the rise of totalitarianism.",
+      "id": "35"
+    },
+    {
+      "title": "The Shining",
+      "author": "Stephen King",
+      "genre": [
+        "Horror",
+        "Psychological"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "447",
+      "description": "Jack Torrance along with his wife and son decide to spend the winter at the Overlook Hotel. They will regret this.",
+      "id": "36"
+    },
+    {
+      "title": "The Hive",
+      "author": "Camilo José Cela",
+      "genre": [
+        "Historical Fiction",
+        "Psychological"
+      ],
+      "language": "Spanish",
+      "century": "20th",
+      "pageCount": "448",
+      "description": "A novel that portrays the lives of various characters in post-Civil War.",
+      "id": "37"
+    },
+    {
+      "title": "Mist",
+      "author": "Miguel de Unamuno",
+      "genre": [
+        "Philosophical",
+        "Psychological",
+        "Fiction"
+      ],
+      "language": "Spanish",
+      "century": "20th",
+      "pageCount": "188",
+      "description": "A lawyer named Augusto Pérez finds himself in a state of existential confusion and uncertainty, blurring the lines between reality and illusion.",
+      "id": "38"
+    },
+    {
+      "title": "The Mist",
+      "author": "Stephen King",
+      "genre": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "language": "English",
+      "century": "20th",
+      "pageCount": "240",
+      "description": "A group of people are trapped in a supermarket by a mysterious mist that hides terrifying creatures, leading to a struggle for survival and the breakdown of social order.",
+      "id": "39"  
+    },
+    {
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "genre": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "English",
+      "century": "19th",
+      "pageCount": "192",
+      "description": "A young girl named Alice falls inside a rabbit hole. She will end up in a strange world where nothing seems to make sense.",
+      "id": "40"
+    },
+    {
+      "title": "The Adventures of Pinocchio",
+      "author": "Carlo Collodi",
+      "genre": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "Italian",
+      "century": "19th",
+      "pageCount": "228",
+      "description": "A wooden puppet dreams of becoming a real boy.",
+      "id": "41"
+    },
+    {
+      "title": "Steppenwolf",
+      "author": "Hermann Hesse",
+      "genre": [
+        "Psychological",
+        "Philosophical"
+      ],
+      "language": "German",
+      "century": "20th",
+      "pageCount": "224",
+      "description": "Harry Haller is a suicidal intellectual who feels like an outsider in society. He struggles with his dual nature, torn between his human and wolf-like instincts.",
+      "id": "42"
+    },
+    {
+      
     }
+
+
   ]
 }
