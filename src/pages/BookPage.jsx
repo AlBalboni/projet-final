@@ -3,13 +3,17 @@ import { useState, useEffect } from "react";
 {/*toasts*/ }
 import { toast } from "react-toastify";
 import { useSearchParams } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 const BookPage = () => {
   {/*for searching bar*/ }
   const [search, setSearch] = useState("");
   const [searchParams, setSearchParams] = useSearchParams();
-  {/*for sorting genre*/ }
+  {/*for sorting genre filter*/ }
   const [sortGenre, setSortGenre] = useState("");
+  {/*for sorting by alphabetical order and page Count*/ }
+  const [sortOption, setSortOption] = useState("");
+  const [showOption, setShowOption] = useState(false);
 
   useEffect(() => {
   const message = searchParams.get("toast");
@@ -39,6 +43,50 @@ const BookPage = () => {
       onChange={(e) => setSearch(e.target.value)}
       className="w-full max-w-xl border rounded-lg py-2 px-4 focus:outline-none focus:ring-3 focus:ring-blue-500" />
     </div>
+
+    <div className="flex justify-center pb-6 bg-white relative">
+  <button
+    onClick={() => setShowOption(!showOption)}
+    className="border rounded-lg p-3 hover:bg-gray-100"
+  >
+    <FaBars />
+  </button>
+
+  {showOption && (
+    <div className="absolute top-14 bg-white border rounded-lg shadow-md p-3 flex flex-col gap-2 z-10">
+      <button
+        onClick={() => {
+          setSortOption("az");
+          setShowOption(false);
+        }}
+        className="hover:text-blue-500 text-left"
+      >
+        Alphabetical (A-Z)
+      </button>
+
+      <button
+        onClick={() => {
+          setSortOption("pagesAsc");
+          setShowOption(false);
+        }}
+        className="hover:text-blue-500 text-left"
+      >
+        Pages (Low to High)
+      </button>
+
+      <button
+        onClick={() => {
+          setSortOption("pagesDesc");
+          setShowOption(false);
+        }}
+        className="hover:text-blue-500 text-left"
+      >
+        Pages (High to Low)
+      </button>
+    </div>
+  )}
+</div>
+
     <div className="flex justify-center pb-6 bg-white">
       <select
       value={sortGenre}
@@ -120,6 +168,7 @@ const BookPage = () => {
   <BookList 
     search={search}
     sortGenre={sortGenre}
+    sortOption={sortOption}
   />
   </>
   );
