@@ -1,6 +1,6 @@
 const Hero = ({
   title = "Find Your Next Favorite Book",
-  subTitle = "look for books, authors and genres. Click on the heart to save your favorites and create your own personalized library.",
+  subTitle = "Look for books, authors and genres. Click on the heart to save your favorites and create your own personalized library.",
 }) => {
   return (
     <section className="bg-blue-700 py-20 mb-4">
