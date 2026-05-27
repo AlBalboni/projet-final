@@ -106,6 +106,7 @@ const BookPage = () => {
     <option value="Crime">Crime</option>
     <option value="Dystopian">Dystopian</option>
     <option value="Epic">Epic</option>
+    <option value="Essay">Essay</option>
     <option value="Fantasy">Fantasy</option>
     <option value="Fiction">Fiction</option>
     <option value="Graphic Novel">Graphic Novel</option>
@@ -120,7 +121,9 @@ const BookPage = () => {
     <option value="Realism">Realism</option>
     <option value="Romance">Romance</option>
     <option value="Satire">Satire</option>
+    <option value="Social Criticism">Social Criticism</option>
     <option value="Science Fiction">Science Fiction</option>
+    <option value="Theatrical">Theatrical</option>
     <option value="Thriller">Thriller</option>
   </select>
 

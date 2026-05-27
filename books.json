@@ -593,6 +593,115 @@
       "pageCount": "224",
       "description": "Harry Haller is a suicidal intellectual who feels like an outsider in society. He struggles with his dual nature, torn between his human and wolf-like instincts.",
       "id": "42"
-    }
+    },
+    {
+    "title": "Cyrano de Bergerac",
+    "author": "Edmond Rostand",
+    "genre": [
+      "Comedy",
+      "Romance",
+      "Theater"
+    ],
+    "language": "French",
+    "century": "19th",
+    "pageCount": "224",
+    "description": "Cyrano de Bergerac is desperately in love with Roxane, the most beautiful woman in Paris.",
+    "id": "43"
+  },
+  {
+    "title": "The Flowers of Evil",
+    "author": "Charles Baudelaire",
+    "genre": [
+      "Poetry",
+      "Philosophical",
+      "Theater"
+    ],
+    "language": "French",
+    "century": "19th",
+    "pageCount": "162",
+    "description": "This book is a collection of poetry in that shocked the respectable bourgeoisie of the time for its desire to mix the beautiful and the sordid, sensuality and evil.",
+    "id": "44"
+  },
+  {
+    "title": "The House of Bernarda Alba",
+    "author": "Federico García Lorca",
+    "genre": [
+      "Poetry",
+      "Theater"
+    ],
+    "language": "Spanish",
+    "century": "20th",
+    "pageCount": "96",
+    "description": "The play tells the story of Bernarda Alba, an authoritarian woman who imposes a strict eight-year mourning period on her five daughters after becoming a widow, locking them in the house and repressing their desires, which generates tensions, envy and a struggle between authority and individual freedom that culminates in tragedy.",
+    "id": "45"
+  },
+  {
+    "title": "Story of a Staircase",
+    "author": "Antonio Buero Vallejo",
+    "genre": [
+      "Realism",
+      "Theater",
+      "Social Criticism"
+    ],
+    "language": "Spanish",
+    "century": "20th",
+    "pageCount": "157",
+    "description": "It is a play that recounts life's frustrations and the lack of social progress over the years. The plot unfolds on the landing of a modest building, showing how three generations of neighbors are trapped in poverty, repeating the same mistakes and unfulfilled dreams.",
+    "id": "46"
+  },
+  {
+    "title": "Fields of Castille",
+    "author": "Antonio Machado",
+    "genre": [
+      "Poetry",
+      "Philosophical"
+    ],
+    "language": "Spanish",
+    "century": "20th",
+    "pageCount": "110",
+    "description": "It is a collection of poems in which he reflects in profound verses the wonders of life, love, and pleasure.",
+    "id": "47"
+  },
+  {
+    "title": "Tragic Sense of Life",
+    "author": "Miguel de Unamuno",
+    "genre": [
+      "Philosophical",
+      "Essay"
+    ],
+    "language": "Spanish",
+    "century": "20th",
+    "pageCount": "320",
+    "description": "An essay that explores the human existential contradiction between the desire for immortality and the certainty of death, a conflict between reason and faith.",
+    "id": "48"
+  },
+  {
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "genre": [
+      "Historical",
+      "Adventure",
+      "Romance"
+    ],
+    "language": "English",
+    "century": "20th",
+    "pageCount": "224",
+    "description": "A group of American and British expatriates travel from Paris to Spain in the 1920s, seeking meaning and fulfillment in the aftermath of World War I, while navigating love, disillusionment, and the search for identity.",
+    "id": "49"
+  },
+  {
+    "title": "Capital",
+    "author": "Karl Marx",
+    "genre": [
+      "Philosophical",
+      "Social Criticism",
+      "Essay"
+    ],
+    "language": "German",
+    "century": "19th",
+    "pageCount": "1392",
+    "description": "A critical analysis of the political economy of capitalism and its impact on society.",
+    "id": "50"
+  }
   ]
 }

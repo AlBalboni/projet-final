@@ -93,6 +93,9 @@ const AddBookPage = () => {
               <option value="Epic">
                 Epic
               </option>
+              <option value="Essay">
+                Essay
+              </option>
               <option value="Fantasy">
                 Fantasy
               </option>
@@ -137,6 +140,12 @@ const AddBookPage = () => {
               </option>
               <option value="Science Fiction">
                 Science Fiction
+              </option>
+              <option value="Social Criticism">
+                Social Criticism
+              </option>
+              <option value="Theater">
+                Theatrical
               </option>
               <option value="Thriller">
                 Thriller
