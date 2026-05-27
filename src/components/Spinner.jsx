@@ -1,19 +1,15 @@
 import { ClipLoader } from "react-spinners";
 
-const override = {
-  display: "block",
-  margin: "100px auto",
-};
-
 const Spinner = ({ loading }) => {
   return (
-    <ClipLoader
-      color="#0059ff"
-      loading={loading}
-      size={150}
-      cssOverride={override}
-      aria-label="Loading Spinner"
-    />
+    <div className="col-span-full flex justify-center items-center py-20">
+      <ClipLoader
+        color="#3b82f6"
+        loading={loading}
+        size={150}
+        aria-label="Loading Spinner"
+      />
+    </div>
   );
 };
 
