@@ -145,7 +145,7 @@ const AddBookPage = () => {
                 Social Criticism
               </option>
               <option value="Theater">
-                Theatrical
+                Theater
               </option>
               <option value="Thriller">
                 Thriller

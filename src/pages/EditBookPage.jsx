@@ -145,8 +145,8 @@ return (
               <option value="Social Criticism">
                 Social Criticism
               </option>
-              <option value="Theatrical">
-                Theatrical
+              <option value="Theater">
+                Theater
               </option>
               <option value="Thriller">
                 Thriller

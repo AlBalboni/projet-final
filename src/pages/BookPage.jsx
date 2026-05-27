@@ -123,7 +123,7 @@ const BookPage = () => {
     <option value="Satire">Satire</option>
     <option value="Social Criticism">Social Criticism</option>
     <option value="Science Fiction">Science Fiction</option>
-    <option value="Theatrical">Theatrical</option>
+    <option value="Theater">Theater</option>
     <option value="Thriller">Thriller</option>
   </select>
 
