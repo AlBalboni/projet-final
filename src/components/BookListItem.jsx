@@ -4,29 +4,41 @@ import { Link } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
 
 const BookListItem = ({ book }) => {
-  const [showFullDesc, setShowFullDesc] = useState(false);
-  const favorites =
-  JSON.parse(localStorage.getItem("favorites")) || [];
 
-const isFavorite = favorites.includes(book.id.toString());
+  const [showFullDesc, setShowFullDesc] = useState(false);
+
+  const [isFavorite, setIsFavorite] = useState(() => {
+    const favorites =
+      JSON.parse(localStorage.getItem("favorites")) || [];
+
+    return favorites.includes(book.id.toString());
+  });
 
 const toggleFavorite = () => {
+  const favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+
   let updatedFavorites;
 
   if (isFavorite) {
     updatedFavorites = favorites.filter(
       (id) => id !== book.id.toString()
     );
+
+    setIsFavorite(false);
   } else {
-    updatedFavorites = [...favorites, book.id.toString()];
+    updatedFavorites = [
+      ...favorites,
+      book.id.toString(),
+    ];
+
+    setIsFavorite(true);
   }
 
   localStorage.setItem(
     "favorites",
     JSON.stringify(updatedFavorites)
   );
-
-  window.location.reload();
 };
 
   let description = book.description || "";
