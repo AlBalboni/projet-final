@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Card from "./Card";
+import { PiBooks } from "react-icons/pi";
+import { MdEdit } from "react-icons/md";
 
 const CardContainer = () => {
   return (
@@ -7,7 +9,7 @@ const CardContainer = () => {
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
           <Card>
-            <h2 className="text-2xl font-bold">All our books</h2>
+            <h2 className="text-2xl font-bold">All our books <PiBooks className="inline mb-1 mr-1" /></h2>
             <p className="mt-2 mb-4">
               Submerse yourself into our collection of timeless classics.
             </p>
@@ -20,7 +22,7 @@ const CardContainer = () => {
           </Card>
 
           <Card bg="bg-blue-100">
-            <h2 className="text-2xl font-bold">For editors</h2>
+            <h2 className="text-2xl font-bold">For editors <MdEdit className="inline mb-1 mr-1" /></h2>
             <p className="mt-2 mb-4">
               Add your own books to our collection and share your love for literature with your friends and family.
             </p>

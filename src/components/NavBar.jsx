@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import { FaHome, FaBook, FaHeart, FaPlus } from "react-icons/fa";
 
 const NavBar = () => {
   const linkClass = ({ isActive }) =>
@@ -23,15 +24,19 @@ const NavBar = () => {
               <div className="flex space-x-2">
                 <NavLink to="/" className={linkClass}>
                   Home
+                  <FaHome className="inline-block ml-1 mr-1 mb-1" />
                 </NavLink>
                 <NavLink to="/books" className={linkClass}>
                   Books
+                  <FaBook className="inline-block ml-1 mr-1 mb-1" />
                 </NavLink>
                 <NavLink to="/favorite-books" className={linkClass}>
                   Favorites
+                  <FaHeart className="inline-block ml-1 mr-1 mb-1" />
                 </NavLink>
                 <NavLink to="/add-books" className={linkClass}>
                   Add books
+                  <FaPlus className="inline-block ml-1 mr-1 mb-1" />
                 </NavLink>
               </div>
             </div>

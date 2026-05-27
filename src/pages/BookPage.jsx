@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 {/*toasts*/ }
 import { toast } from "react-toastify";
 import { useSearchParams } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaSearch } from "react-icons/fa";
 
 const BookPage = () => {
   {/*for searching bar*/ }
@@ -84,13 +84,16 @@ const BookPage = () => {
   </div>
 
   {/* SEARCH BAR */}
-  <input
-    type="text"
-    placeholder="Search for book or author..."
-    value={search}
-    onChange={(e) => setSearch(e.target.value)}
-    className="flex-1 max-w-xl border rounded-lg py-2 px-4 focus:outline-none focus:ring-3 focus:ring-blue-500"
-  />
+  <div className="relative flex-1 max-w-xl">
+    <input
+      type="text"
+      placeholder="Search for book or author..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      className="w-full border rounded-lg py-2 pl-10 pr-4 focus:outline-none focus:ring-3 focus:ring-blue-500">
+    </input>
+   <FaSearch className="absolute left-3 top-3 text-gray-400" />
+  </div>
 
   {/* GENRE FILTER */}
   <select

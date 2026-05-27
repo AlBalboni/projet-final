@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaLocationDot } from "react-icons/fa6";
+import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
 
@@ -79,7 +79,7 @@ const toggleFavorite = () => {
 
         <div className="flex flex-col lg:flex-row justify-between mb-4">
           <div className="text-orange-700 mb-3">
-            <FaLocationDot className="inline mb-1 mr-1" />
+            <MdLanguage className="inline mb-1 mr-1" />
             {book.language}
           </div>
           <Link

@@ -1,5 +1,7 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
-import { FaArrowLeft, FaLocationDot } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
+import { MdLanguage } from "react-icons/md";
+import { MdEdit, MdDelete } from "react-icons/md";
 
 const BookDetailPage = () => {
   const data = useLoaderData();
@@ -22,9 +24,9 @@ const BookDetailPage = () => {
               <div className="bg-white p-6 rounded-lg shadow-md text-center md:text-left">
                 <div className="text-gray-500 mb-4">{data.genre.join(", ")}</div>
                 <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
-                <div className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
-                  <FaLocationDot className="text-lg text-orange-700 mr-2" />
-                  <p className="text-orange-700">{data.language}</p>
+                <div className="text-orange-700 mb-3">
+                  <MdLanguage className="inline mb-1 mr-1" />
+                    {data.language}
                 </div>
               </div>
 
@@ -45,10 +47,12 @@ const BookDetailPage = () => {
                 <Link to={`/edit-book/${data.id}`}
                   className="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
+                  <MdEdit className="inline mb-1 mr-1" />
                   Edit book
                 </Link>
                 <Form method="delete">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
+                <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
+                  <MdDelete className="inline mb-1 mr-1" />
                   Delete book
                 </button>
                 </Form>
