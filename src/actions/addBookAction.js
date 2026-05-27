@@ -14,12 +14,21 @@ const addBookAction = async ({ request }) => {
   return { errors };
   }
 
+  {/*If the user choses AD the century is formatted as a number, ele it's formatted as BC th*/}
+  const century = formData.get("century");
+  const era = formData.get("era");
+
+  const formattedCentury =
+    era === "BC"
+      ? `${century}th BC`
+      : `${century}th`;
+
   const newBook = {
     title: formData.get("title"),
     author: formData.get("author"),
     genre: formData.getAll("genre"),
     language: formData.get("language"),
-    century: formData.get("century"),
+    century: formattedCentury,
     pageCount: formData.get("pageCount"),
     description: formData.get("description"),
   };

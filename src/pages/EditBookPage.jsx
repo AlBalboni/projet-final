@@ -178,15 +178,32 @@ return (
 
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">Century</label>
-              <input
-                type="text"
-                id="century"
-                name="century"
-                className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Release century of the book"
-                required
-                defaultValue={data.century}
-              />
+                <div className="flex gap-3">
+
+                  {/* NUMBER INPUT */}
+                  <input
+                    type="number"
+                    id="century"
+                    name="century"
+                    min="0"
+                    max="99"
+                    className="border rounded w-full py-2 px-3 mb-2"
+                    placeholder="ex: 19"
+                    required
+                  />
+
+                  {/* BC / AD SELECT */}
+                  <select
+                    id="era"
+                    name="era"
+                    className="border rounded py-2 px-3 mb-2"
+                    required
+                  >
+                    <option value="AD">AD</option>
+                    <option value="BC">BC</option>
+                  </select>
+
+                </div>
             </div>
 
             <div className="mb-4">

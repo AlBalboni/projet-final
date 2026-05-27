@@ -702,6 +702,19 @@
       "pageCount": "1392",
       "description": "A critical analysis of the political economy of capitalism and its impact on society.",
       "id": "50"
+    },
+    {
+      "title": "The Epic of Gilgamesh",
+      "author": "Sîn-lēqi-unninni",
+      "genre": [
+        "Poetry",
+        "Epic"
+      ],
+      "language": "Sumerian",
+      "century": "11th BC",
+      "pageCount": "128",
+      "description": "The history of Gilgamesh, king of Uruk. Ancient Mesopotamian poem divided into 11 to 12 clay tables it is often regarded as the first story ever written. The \"Old Babylonian\" version dates as far back as the 18th BC century. The newer Arkkadian version was edited by Sîn-lēqi-unninni somewhere between 13th and 10th BC Century.",
+      "id": "51"
     }
   ]
 }
