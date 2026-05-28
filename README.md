@@ -10,7 +10,7 @@
 
 ## Project Description
 
-<p align="center"><b>BookNow is a web application that allows users to search for books, add them to a database, and share their interests with others. The application is built using React for the frontend, Tailwind CSS and vite. It uses MockAPI as a database to store book information and user data.</b></p>
+<p><b>BookNow is a web application that allows users to search for books, add them to a database, and share their interests with others. The application is built using React for the frontend and node.js for the backend, Tailwind CSS and vite are also used. It uses MockAPI as a database to store book information and user data.</b></p>
 
 ---
 
@@ -83,21 +83,43 @@ projet-final/
 
 ## Installation
 
-<p align="center"><b>Go to the folder Projet-final and open two terminals. One for the server and one to generate the localhost link.</b></p>
+<p><b>To run the project, you need to have Node.js and npm installed on your machine. To install this tou can write in the terminal:</b></p>
+
+```bash
+npm install
+```
+<p><b>You will also need react router dom:</b></p>
+
+```bash
+npm install react-router-dom@latest
+```
+<p><b>You will need json-server:</b></p>
+
+```bash
+npm i -D json-server@0
+```
+<p><b>More installations needed:</b></p>
+
+```bash
+npm i react-spinners
+npm i react-icons
+```
+
+<p><b>Now go to the folder Projet-final and open two terminals. One for the server and one to generate the localhost link.</b></p>
 
 ```bash
 npm run server
 npm run dev
 ```
-to see in local
+<p><b>Youre ready to go!</b></p>
 
 ---
 
 ## Web Page
 
-<p align="center"><b>To see the webpage you can also follow this link: </b></p>
+<p><b>To see the webpage you can also follow this link: </b></p>
 https://readbooknow.netlify.app/
 
-<p align="center"><b>The API used is MockAPI and is connected via an environment variable. The dist folder contains the compiled files for the production build. This folder is built through the command `npm run build`. And the folder dist is then uploaded to the hosting service.</b></p>
+<p><b>The API used is MockAPI and is connected via an environment variable. The dist folder contains the compiled files for the production build. This folder is built through the command `npm run build`. And the folder dist is then uploaded to the hosting service.</b></p>
 
 ---
