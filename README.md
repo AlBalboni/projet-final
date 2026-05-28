@@ -118,7 +118,9 @@ npm run dev
 ## Web Page
 
 <p><b>To see the webpage you can also follow this link: </b></p>
-https://readbooknow.netlify.app/
+<b>
+<p align="center">https://readbooknow.netlify.app/ <p>
+</b>
 
 <p><b>The API used is MockAPI and is connected via an environment variable. The dist folder contains the compiled files for the production build. This folder is built through the command `npm run build`. And the folder dist is then uploaded to the hosting service.</b></p>
 
