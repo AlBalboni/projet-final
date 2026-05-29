@@ -56,11 +56,13 @@ projet-final/
 │       ├── AddBookPage.jsx
 │       ├── BookDetailPage.jsx
 │       ├── BookPage.jsx
+│       ├── BookReviewsPage.jsx
 │       ├── EditBookPage.jsx
 │       ├── FavoriteBooksPage.jsx
 │       ├── HomePage.jsx
-│       └── NotFoundPage.jsx
-│   ├── App.css
+│       ├── NotFoundPage.jsx
+│       └── ReviewsPage.jsx
+│   ├── App.css 
 │   ├── App.jsx
 │   ├── index.css
 │   ├── main.jsx
@@ -76,6 +78,7 @@ projet-final/
 ├── package-lock.json
 ├── package.json
 ├── README.md
+├── reviews.json
 └── vite.config.js
 ```
 
@@ -105,10 +108,11 @@ npm i react-spinners
 npm i react-icons
 ```
 
-<p><b>Now go to the folder Projet-final and open two terminals. One for the server and one to generate the localhost link.</b></p>
+<p><b>Now go to the folder Projet-final and open three terminals. One for each server and one to generate the localhost link.</b></p>
 
 ```bash
-npm run server
+npm run server:books
+npm run server:reviews
 npm run dev
 ```
 <p><b>Youre ready to go!</b></p>

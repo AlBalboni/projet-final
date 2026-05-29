@@ -3,12 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "server": "json-server --watch books.json reviews.json --port 8000"
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+
+  "server:books": "json-server --watch books.json --port 8000",
+  "server:reviews": "json-server --watch reviews.json --port 8001"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
