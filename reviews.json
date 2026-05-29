@@ -27,6 +27,20 @@
       "rating": "3",
       "comment": "Outstanding book",
       "id": "ilTrQZh"
+    },
+    {
+      "bookId": "29",
+      "reviewer": "ALejandro",
+      "rating": "2",
+      "comment": "some stories are funny",
+      "id": "6l2LB8E"
+    },
+    {
+      "bookId": "50",
+      "reviewer": "jre",
+      "rating": "2",
+      "comment": "rne",
+      "id": "yy16PvD"
     }
   ]
 }

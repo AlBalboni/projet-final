@@ -24,7 +24,11 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path="/books" element={<BookPage />}/>
+        <Route 
+          path="/books" 
+          element={<BookPage />}
+          errorElement={<NotFoundPage />}
+        />
         <Route
          path="/books/:id"
          element={<BookDetailPage />}
@@ -32,8 +36,17 @@ const App = () => {
          errorElement={<NotFoundPage />}
          action={deleteBookAction}
         />
-      <Route path="/add-books" element={<AddBookPage />} action={addBookAction} />
-      <Route path="/favorite-books" element={<FavoriteBooksPage />} />
+      <Route 
+        path="/add-books" 
+        element={<AddBookPage />} 
+        action={addBookAction} 
+        errorElement={<NotFoundPage />}
+      />
+      <Route 
+        path="/favorite-books" 
+        element={<FavoriteBooksPage />} 
+        errorElement={<NotFoundPage />}
+      />
       <Route
         path="/edit-book/:id"
         element={<EditBookPage />}
@@ -41,8 +54,18 @@ const App = () => {
         errorElement={<NotFoundPage />}
         action={editBookAction}
       />
-      <Route path="/reviews" element={<ReviewsPage />} />  
-      <Route path="/books/:id/reviews" element={<BookReviewsPage />} loader={bookLoader} />
+      <Route 
+        path="/reviews" 
+        element={<ReviewsPage />} 
+        errorElement={<NotFoundPage />}
+        loader={bookLoader} 
+      />  
+      <Route 
+        path="/books/:id/reviews" 
+        element={<BookReviewsPage />} 
+        errorElement={<NotFoundPage />}
+        loader={bookLoader} 
+      />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
     ),

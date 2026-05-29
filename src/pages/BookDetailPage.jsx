@@ -2,6 +2,7 @@ import { Form, Link, useLoaderData } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
 import { MdLanguage } from "react-icons/md";
 import { MdEdit, MdOutlineRateReview, MdDelete} from "react-icons/md";
+
 const BookDetailPage = () => {
   const data = useLoaderData();
   return (
