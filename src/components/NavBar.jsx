@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-import { FaHome, FaBook, FaHeart, FaPlus } from "react-icons/fa";
+import { FaHome, FaBook, FaStar, FaHeart, FaPlus } from "react-icons/fa";
+
 
 const NavBar = () => {
   const linkClass = ({ isActive }) =>
@@ -32,6 +33,7 @@ const NavBar = () => {
                 </NavLink>
                 <NavLink to="/reviews" className={linkClass}>
                   Reviews
+                  <FaStar className="inline-block ml-1 mr-1 mb-1" />
                 </NavLink>
                 <NavLink to="/favorite-books" className={linkClass}>
                   Favorites

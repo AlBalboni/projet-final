@@ -10,7 +10,7 @@
 
 ## Project Description
 
-<p><b>BookNow is a web application that allows users to search for books, add them to a database, and share their interests with others. The application is built using React for the frontend and node.js for the backend, Tailwind CSS and vite are also used. It uses MockAPI as a database to store book information and user data.</b></p>
+<p><b>BookNow is a web application that allows users to search for books, add them to a database, and share their interests with others. The application is built using React for the frontend and node.js for the backend, Tailwind CSS and vite are also used. It uses MockAPI as a database to store book information and user data. You will also be able to review your favorite books and share them with others.</b></p>
 
 ---
 

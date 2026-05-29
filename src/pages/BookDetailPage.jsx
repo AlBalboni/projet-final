@@ -1,8 +1,7 @@
 import { Form, Link, useLoaderData } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
 import { MdLanguage } from "react-icons/md";
-import { MdEdit, MdDelete } from "react-icons/md";
-
+import { MdEdit, MdOutlineRateReview, MdDelete} from "react-icons/md";
 const BookDetailPage = () => {
   const data = useLoaderData();
   return (
@@ -53,6 +52,7 @@ const BookDetailPage = () => {
                 <Link to={`/books/${data.id}/reviews`} 
                   className="bg-purple-500 hover:bg-purple-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
+                  <MdOutlineRateReview className="inline mb-1 mr-1" />
                   Reviews
                 </Link>
                 <Form method="delete">
