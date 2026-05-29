@@ -50,6 +50,11 @@ const BookDetailPage = () => {
                   <MdEdit className="inline mb-1 mr-1" />
                   Edit book
                 </Link>
+                <Link to={`/books/${data.id}/reviews`} 
+                  className="bg-purple-500 hover:bg-purple-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                >
+                  Reviews
+                </Link>
                 <Form method="delete">
                 <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block">
                   <MdDelete className="inline mb-1 mr-1" />

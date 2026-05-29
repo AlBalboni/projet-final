@@ -30,6 +30,9 @@ const NavBar = () => {
                   Books
                   <FaBook className="inline-block ml-1 mr-1 mb-1" />
                 </NavLink>
+                <NavLink to="/reviews" className={linkClass}>
+                  Reviews
+                </NavLink>
                 <NavLink to="/favorite-books" className={linkClass}>
                   Favorites
                   <FaHeart className="inline-block ml-1 mr-1 mb-1" />
