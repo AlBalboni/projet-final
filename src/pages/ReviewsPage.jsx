@@ -52,7 +52,7 @@ const ReviewsPage = () => {
 
       <div className="container mx-auto max-w-4xl">
 
-        <h1 className="text-4xl font-bold text-blue-500 mb-10">
+        <h1 className="text-3xl font-bold text-blue-500 mb-6 text-center">
           All Reviews
         </h1>
 
