@@ -5,7 +5,7 @@ const BookReviewsPage = () => {
 
   const book = useLoaderData();
   const [reviews, setReviews] = useState([]);
-  const [username, setUsername] = useState("");
+  const [reviewer, setReviewer] = useState("");
   const [rating, setRating] = useState("");
   const [comment, setComment] = useState("");
 
@@ -35,7 +35,7 @@ const BookReviewsPage = () => {
 
     const newReview = {
       bookId: book.id,
-      reviewer: username,
+      reviewer: reviewer,
       rating,
       comment,
     };
@@ -52,7 +52,7 @@ const BookReviewsPage = () => {
 
     setReviews((prev) => [...prev, savedReview]);
 
-    setUsername("");
+    setReviewer("");
     setComment("");
     setRating("");
   };
@@ -83,8 +83,8 @@ const BookReviewsPage = () => {
   <input
     type="text"
     placeholder="Your name..."
-    value={username}
-    onChange={(e) => setUsername(e.target.value)}
+    value={reviewer}
+    onChange={(e) => setReviewer(e.target.value)}
     className="border rounded w-full py-2 px-3 mb-4"
     required
   />

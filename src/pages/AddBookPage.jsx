@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const AddBookPage = () => {
   const actionsData = useActionData();
-  //this is used to make multiple genres inside the form.
+{/*this is used to make multiple genres inside the form.*/}
   const [genres, setGenres] = useState([""]);
   const handleGenreChange = (index, value) => {
   const updatedGenres = [...genres];
