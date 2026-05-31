@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useLoaderData } from "react-router-dom";
 
 const ReviewsPage = () => {
 
@@ -8,7 +7,6 @@ const ReviewsPage = () => {
 
   const [books, setBooks] = useState([]);
 
-  const data = useLoaderData();
 
   const REVIEW_URL =
     import.meta.env.VITE_REVIEW_API_URL;
@@ -31,6 +29,7 @@ const ReviewsPage = () => {
 
       const booksData =
         await bookResponse.json();
+        await reviewResponse.json();
 
       setReviews(reviewsData);
 

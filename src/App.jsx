@@ -58,13 +58,13 @@ const App = () => {
         path="/reviews" 
         element={<ReviewsPage />} 
         errorElement={<NotFoundPage />}
-        loader={bookLoader} 
+        loader={bookLoader}
       />  
       <Route 
         path="/books/:id/reviews" 
         element={<BookReviewsPage />} 
         errorElement={<NotFoundPage />}
-        loader={bookLoader} 
+        loader={bookLoader}
       />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
