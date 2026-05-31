@@ -86,7 +86,7 @@ projet-final/
 
 ## Installation
 
-<p><b>To run the project, you need to have Node.js and npm installed on your machine. To install this tou can write in the terminal:</b></p>
+<p><b>To run the project, you need to have Node.js and npm installed on your machine. If you are using windows you can install it by writing in the terminal:</b></p>
 
 ```bash
 npm install
