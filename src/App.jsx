@@ -15,6 +15,7 @@ import addBookAction from "./actions/addBookAction";
 import EditBookPage from "./pages/EditBookPage";
 import editBookAction from "./actions/editBookAction";
 import deleteBookAction from "./actions/deleteBookAction";
+import addReviewAction from "./actions/addReviewAction";
 import ReviewsPage from "./pages/ReviewsPage";
 import BookReviewsPage from "./pages/BookReviewsPage";
 import FavoriteBooksPage from "./pages/FavoriteBooksPage";
@@ -58,13 +59,12 @@ const App = () => {
         path="/reviews" 
         element={<ReviewsPage />} 
         errorElement={<NotFoundPage />}
-        loader={bookLoader}
-      />  
+      /> 
       <Route 
-        path="/books/:id/reviews" 
+        path="/books/:id/add-review" 
         element={<BookReviewsPage />} 
+        action={addReviewAction}
         errorElement={<NotFoundPage />}
-        loader={bookLoader}
       />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,

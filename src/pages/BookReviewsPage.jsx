@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const BookReviewsPage = () => {
@@ -6,15 +6,12 @@ const BookReviewsPage = () => {
 
   const [reviews, setReviews] = useState([]);
 
-  const [reviewer, setReviewer] = useState("");
-  const [rating, setRating] = useState("");
-  const [comment, setComment] = useState("");
-
   const REVIEW_URL =
     import.meta.env.VITE_REVIEW_API_URL;
 
   useEffect(() => {
     const fetchReviews = async () => {
+      try {
         const response = await fetch(
           `${REVIEW_URL}?bookId=${book.id}`
         );
@@ -22,41 +19,14 @@ const BookReviewsPage = () => {
         const data = await response.json();
 
         setReviews(Array.isArray(data) ? data : []);
+      } catch (error) {
+        console.error("Error fetching reviews:", error);
+        setReviews([]);
+      }
     };
 
     fetchReviews();
   }, [REVIEW_URL, book.id]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const newReview = {
-      bookId: book.id,
-      reviewer,
-      rating,
-      comment,
-    };
-
-    try {
-      const response = await fetch(REVIEW_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newReview),
-      });
-
-      const savedReview = await response.json();
-
-      setReviews((prev) => [...prev, savedReview]);
-
-      setReviewer("");
-      setComment("");
-      setRating("");
-    } catch (error) {
-      console.error("Error posting review:", error);
-    }
-  };
 
   return (
     <section className="bg-blue-50 min-h-screen py-10 px-6">
@@ -70,56 +40,12 @@ const BookReviewsPage = () => {
             Reviews
           </p>
 
-          {/* REVIEW FORM */}
-
-          <form
-            onSubmit={handleSubmit}
-            className="mb-10"
+          <Link
+            to={`/books/${book.id}/add-review`}
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg mb-8"
           >
-            <input
-              type="text"
-              placeholder="Your name..."
-              value={reviewer}
-              onChange={(e) => setReviewer(e.target.value)}
-              className="border rounded w-full py-2 px-3 mb-4"
-              required
-            />
-
-            <select
-              value={rating}
-              onChange={(e) => setRating(e.target.value)}
-              className="border rounded w-full py-2 px-3 mb-4"
-              required
-            >
-              <option value="">
-                Select rating
-              </option>
-
-              <option value="1">1 ⭐</option>
-              <option value="2">2 ⭐⭐</option>
-              <option value="3">3 ⭐⭐⭐</option>
-              <option value="4">4 ⭐⭐⭐⭐</option>
-              <option value="5">5 ⭐⭐⭐⭐⭐</option>
-            </select>
-
-            <textarea
-              placeholder="Write your review..."
-              value={comment}
-              onChange={(e) => setComment(e.target.value)}
-              rows="4"
-              className="border rounded w-full py-2 px-3 mb-4"
-              required
-            />
-
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg"
-            >
-              Post review
-            </button>
-          </form>
-
-          {/* REVIEWS */}
+            Add Review
+          </Link>
 
           <div className="space-y-4">
             {reviews.length > 0 ? (
