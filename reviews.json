@@ -55,6 +55,20 @@
       "rating": "2",
       "comment": "rf",
       "id": "8"
+    },
+    {
+      "bookId": "1",
+      "reviewer": "Alejandro",
+      "rating": "5",
+      "comment": "good book",
+      "id": "NPK2Zjo"
+    },
+    {
+      "bookId": "33",
+      "reviewer": "Serife",
+      "rating": "4",
+      "comment": "Inspiring experience",
+      "id": "Fajx5sA"
     }
   ]
 }

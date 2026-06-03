@@ -1,7 +1,9 @@
 import { redirect } from "react-router-dom";
 
 const addReviewAction = async ({ request, params }) => {
-  const BASE_URL = import.meta.env.VITE_API_URL;
+  const REVIEW_URL =
+    import.meta.env.VITE_REVIEW_API_URL;
+
   const formData = await request.formData();
 
   const errors = {};
@@ -27,12 +29,13 @@ const addReviewAction = async ({ request, params }) => {
   }
 
   const newReview = {
+    bookId: params.id,
     reviewer,
     rating,
     comment,
   };
 
-  await fetch(`${BASE_URL}/books/${params.id}/reviews`, {
+  await fetch(REVIEW_URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
