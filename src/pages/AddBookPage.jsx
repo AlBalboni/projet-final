@@ -1,3 +1,4 @@
+{/*Page to add Books*/}
 import { Form, useActionData } from "react-router-dom";
 import { useState } from "react";
 
@@ -14,7 +15,7 @@ const AddBookPage = () => {
   const addGenreField = () => {
     setGenres([...genres, ""]);
   };
-
+{/*to handle the errors*/}
   const errors = actionsData?.error;
   return (
     <section className="bg-blue-50">
@@ -59,14 +60,14 @@ const AddBookPage = () => {
             <label className="block text-gray-700 font-bold mb-2">
                Genre
             </label>
-
+{/*Genres are of choice between allt the options available*/}
             {genres.map((genre, index) => (
               <select
                 key={index}
                 name="genre"
                 value={genre}
                 onChange={(e) =>
-                handleGenreChange(index, e.target.value)
+                handleGenreChange(index, e.target.value) // handles change of the genre select
                }
               className="border rounded w-full py-2 px-3 mb-2"
               required={index === 0}

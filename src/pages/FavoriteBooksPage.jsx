@@ -1,3 +1,4 @@
+{/*Page that handles with the favorites*/}
 import { useEffect, useState } from "react";
 import BookListItem from "../components/BookListItem";
 
@@ -10,10 +11,10 @@ const FavoriteBooksPage = () => {
 
       const response = await fetch(`${BASE_URL}/books`);
       const books = await response.json();
-
+{/*books are saved inside a local storage (the favorites page)*/}
       const favorites =
         JSON.parse(localStorage.getItem("favorites")) || [];
-
+{/*This line of code is so that the sorting doesnt reset when you put a book in favorites*/}
       const filteredBooks = books.filter((book) =>
         favorites.includes(book.id.toString())
       );

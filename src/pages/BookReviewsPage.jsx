@@ -1,3 +1,4 @@
+{/*This page is exclusively to see the reviews ONLY of a individual book. SO when you click on read more of a book and then on reviews*/}
 import { useLoaderData, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa6";
@@ -10,7 +11,7 @@ const BookReviewsPage = () => {
 
   const REVIEW_URL =
     import.meta.env.VITE_REVIEW_API_URL;
-
+{/*used a fetch request to get the reviews from the API*/}
   useEffect(() => {
     const fetchReviews = async () => {
       try {
@@ -34,7 +35,7 @@ const BookReviewsPage = () => {
               );
             })
           : [];
-
+{/*did this to filter the reviews for the specific book ONLY*/}
         setReviews(filteredReviews);
       } catch (error) {
         console.error(
@@ -97,7 +98,7 @@ const BookReviewsPage = () => {
                     <h3 className="font-bold text-blue-600">
                       {review.reviewer}
                     </h3>
-
+{/*Number of stars for a book maximum 5 minimum 0*/}
                     <p className="text-yellow-500 mt-1">
                       {"⭐".repeat(
                         Number(review.rating || 0)

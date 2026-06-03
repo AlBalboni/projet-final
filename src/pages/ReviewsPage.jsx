@@ -1,3 +1,4 @@
+{/*Page where you see ALL the reviews. Only Reviewer rating and comments are showed, also a link to the book*/}
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -68,7 +69,7 @@ const ReviewsPage = () => {
         <div className="space-y-6">
           {reviews.length > 0 ? (
             reviews
-              .filter((review) => review?.id) // remove corrupted reviews
+              .filter((review) => review?.id) // remove corrupted reviews thanks AI
               .map((review) => {
                 const book = getBook(review.bookId);
 
@@ -81,6 +82,7 @@ const ReviewsPage = () => {
                     to={`/books/${review.bookId}`}
                     className="text-2xl font-bold hover:text-blue-500"
                   >
+{/*handles when a book is deleted or not found, so that the review remains visible*/}
                     {book ? book.title : 
                     "Unknown Book (deleted or invalid)"}
                   </Link>

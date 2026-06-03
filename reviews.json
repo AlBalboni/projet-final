@@ -83,6 +83,20 @@
       "rating": "3",
       "comment": "vnjfkv",
       "id": "mmAb9QD"
+    },
+    {
+      "bookId": "10",
+      "reviewer": "Lucas",
+      "rating": "3",
+      "comment": "good read!",
+      "id": "LIQayri"
+    },
+    {
+      "bookId": "39",
+      "reviewer": "Eva",
+      "rating": "4",
+      "comment": "Found this book very amazing. Would recommend!",
+      "id": "w37sgYb"
     }
   ]
 }

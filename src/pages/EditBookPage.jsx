@@ -1,3 +1,4 @@
+{/*Page to edit the books, is very similar to the add book page*/}
 import { Form } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";

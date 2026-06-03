@@ -1,3 +1,4 @@
+{/*the page to add a review you get to thbis page by clicking on the button add review from the BookDetailPage*/}
 import { Form } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";

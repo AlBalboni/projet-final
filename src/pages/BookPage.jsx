@@ -1,3 +1,4 @@
+{/*Page with all the books, so the one thats next to the homepage*/}
 import BookList from "../components/BookList";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
@@ -26,7 +27,7 @@ const BookPage = () => {
       setGenreBooks(data);
     };
     fetchBooks();
-
+{/*Alerts for the toasts i think warning is not used but may be used in the future*/}
     const message = searchParams.get("toast");
     const type = searchParams.get("type");
 
@@ -98,7 +99,7 @@ const BookPage = () => {
     <>
 <div className="flex items-center justify-between gap-4 px-6 py-6 bg-white flex-wrap">
 
-  {/* SORTING ICON */}
+  {/* SORTING ICON click on it to show options */}
   <div className="relative">
     <button
       onClick={() => setShowOption(!showOption)}
@@ -106,7 +107,7 @@ const BookPage = () => {
     >
       <FaBars/>
     </button>
-
+{/*sort by alphabetical order*/}
     {showOption && (
       <div className="absolute top-14 left-0 bg-white border rounded-lg shadow-md p-3 flex flex-col gap-2 z-10">
         <button
@@ -118,7 +119,7 @@ const BookPage = () => {
         >
           Alphabetical (A-Z)
         </button>
-
+{/*Sort by number of pages ascending*/}
         <button
           onClick={() => {
             setSortOption("pagesAsc");
@@ -128,7 +129,7 @@ const BookPage = () => {
         >
           Pages (Low to High)
         </button>
-
+{/*Sort by number of pages descending*/}
         <button
           onClick={() => {
             setSortOption("pagesDesc");
@@ -142,7 +143,7 @@ const BookPage = () => {
     )}
   </div>
 
-  {/* SEARCH BAR */}
+  {/* SEARCH BAR for books and authors*/}
   <div className="relative flex-1 max-w-xl">
     <input
       type="text"

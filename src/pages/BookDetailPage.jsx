@@ -1,3 +1,4 @@
+{/*Page for every specific book with information about the author the descrption and the possibility to delete modify or write a review*/}
 import { Form, Link, useLoaderData } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
 import { MdLanguage, MdEdit, MdOutlineRateReview, MdDelete} from "react-icons/md";

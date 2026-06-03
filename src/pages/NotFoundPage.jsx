@@ -1,3 +1,4 @@
+{/*Not found page as seen on the course. Any redirections that arent expected will land here*/}
 import { FaExclamationTriangle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

@@ -1,3 +1,4 @@
+{/*App Mainly for rooting*/}
 import {
   Route,
   createBrowserRouter,
