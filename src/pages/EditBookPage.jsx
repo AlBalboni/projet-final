@@ -91,6 +91,9 @@ return (
               <option value="Dystopian">
                 Dystopian
               </option>
+              <option value="Economic">
+                Economic
+              </option>
               <option value="Epic">
                 Epic
               </option>
@@ -124,6 +127,9 @@ return (
               <option value="Poetry">
                 Poetry
               </option>
+              <option value="Political">
+                Political
+              </option>
               <option value="Psychological">
                 Psychological
               </option>
@@ -141,6 +147,9 @@ return (
               </option>
               <option value="Science Fiction">
                 Science Fiction
+              </option>
+              <option value="Scientific">
+                Scientific
               </option>
               <option value="Social Criticism">
                 Social Criticism

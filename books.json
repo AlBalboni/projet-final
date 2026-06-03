@@ -715,6 +715,244 @@
       "pageCount": "128",
       "description": "The history of Gilgamesh, king of Uruk. Ancient Mesopotamian poem divided into 11 to 12 clay tables it is often regarded as the first story ever written. The \"Old Babylonian\" version dates as far back as the 18th BC century. The newer Arkkadian version was edited by Sîn-lēqi-unninni somewhere between 13th and 10th BC Century.",
       "id": "51"
-    }
-  ]
+    },
+    {
+      "title": "The Art of War",
+      "author": "Sun Tzu",
+      "genre": [
+        "Philosophical",
+        "Historical"
+      ],
+      "language": "Classical Chinese",
+      "century": "5th BC",
+      "pageCount": "160",
+      "description": "Book written by the strategist Sun Tsu. Ancient text defining how to win without conflict and the self and enemy awareness.",
+      "id": "52"
+    },
+    {
+      "title": "The Prince",
+      "author": "Niccolò Machiavelli",
+      "genre": [
+        "Philosophical",
+        "Political"
+      ],
+      "language": "Italian",
+      "century": "16th",
+      "pageCount": "140",
+      "description": "A political treatise by the Italian diplomat and political theorist Niccolò Machiavelli. The book offers advice on how rulers can maintain power and control over their states, often advocating for pragmatic and sometimes ruthless tactics.",
+      "id": "53"
+    },
+    {
+      "title": "The Social Contract",
+      "author": "Jean-Jacques Rousseau",
+      "genre": [
+        "Philosophical",
+        "Political",
+        "Essay"
+      ],
+      "language": "French",
+      "century": "18th",
+      "pageCount": "200",
+      "description": "A political philosophy book that explores the concept of the social contract, arguing that individuals consent to form a society and establish a government to protect their rights and promote the common good.",
+      "id": "54"
+    },
+    {
+      "title": "The Communist Manifesto",
+      "author": "Karl Marx and Friedrich Engels",
+      "genre": [
+        "Philosophical",
+        "Political",
+        "Essay"
+      ],
+      "language": "German",
+      "century": "19th",
+      "pageCount": "48",
+      "description": "A political pamphlet that presents the principles of communism and calls for the overthrow of capitalist societies, advocating for a classless and stateless society where the means of production are owned collectively.",
+      "id": "55"    
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "genre": [
+          "Philosophical",
+          "Political",
+          "Essay"
+        ],
+        "language": "Ancient Greek",
+        "century": "4th BC",
+        "pageCount": "300",
+        "description": "A philosophical dialogue that explores the nature of justice, the ideal state, and the role of the philosopher in society.",
+        "id": "56"
+      },
+      {
+        "title": "The Wealth of Nations",
+        "author": "Adam Smith",
+        "genre": [
+          "Philosophical",
+          "Economic",
+          "Essay"
+        ],
+        "language": "English",
+        "century": "18th",
+        "pageCount": "900",
+        "description": "A foundational work in economics that explores the nature of wealth, the division of labor, and the principles of free markets.",
+        "id": "57"
+      },
+      {
+        "title": "The Origin of Species",
+        "author": "Charles Darwin",
+        "genre": [
+          "Scientific",
+          "Philosophical"
+        ],
+        "language": "English",
+        "century": "19th",
+        "pageCount": "502",
+        "description": "A scientific work that presents the theory of evolution by natural selection, explaining how species evolve over time through the process of adaptation and survival of the fittest.",
+        "id": "58"
+      },
+      {
+        "title": "The Interpretation of Dreams",
+        "author": "Sigmund Freud",
+        "genre": [
+          "Psychological",
+          "Philosophical"
+        ],
+        "language": "German",
+        "century": "20th",
+        "pageCount": "600",
+        "description": 	"A groundbreaking work in psychology that explores the significance of dreams and their role in understanding the unconscious mind.",
+        "id": "59"
+      },
+      {
+        "title": "The Double Helix",
+        "author": "James D. Watson",
+        "genre": [
+          "Scientific",
+          "Biography"
+        ],
+        "language": "English",
+        "century": "20th",
+        "pageCount": "256",
+        "description": "A memoir that chronicles the discovery of the structure of DNA, providing insights into the scientific process and the personalities involved in this groundbreaking discovery.",
+        "id": "60"
+       },
+      {
+        "title": "The Selfish Gene",
+        "author": "Richard Dawkins",
+        "genre": [
+          "Scientific",
+          "Philosophical"
+        ],
+        "language": "English",
+        "century": "20th",
+        "pageCount": "360",
+        "description": "A popular science book that explores the concept of gene-centered evolution, arguing that genes are the fundamental units of natural selection and that organisms are vehicles for their replication.",
+        "id": "61"
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "genre": [
+          "Scientific",
+          "Philosophical"
+        ],
+        "language": "English",
+        "century": "20th",
+        "pageCount": "200",
+        "description": "A seminal work in the philosophy of science that introduces the concept of paradigm shifts, arguing that scientific progress occurs through revolutionary changes in the fundamental framework of scientific understanding.",
+        "id": "62"
+      },
+      {
+        "title": "The Demon-Haunted World",
+        "author": "Carl Sagan",
+        "genre": [
+          "Scientific",
+          "Philosophical"
+        ],
+        "language": "English",
+        "century": "20th",
+        "pageCount": "450",
+        "description": "A book that promotes scientific skepticism and critical thinking, encouraging readers to question pseudoscience and embrace the scientific method as a way to understand the world.",
+        "id": "63"
+      },
+      {
+        "title": "The Gene: An Intimate History",
+        "author": "Siddhartha Mukherjee",
+        "genre": [
+          "Scientific",
+          "Biography"
+        ],
+        "language": "English",
+        "century": "21st",
+        "pageCount": "592",
+        "description": "A comprehensive history of the gene, exploring its discovery, the science behind it, and its implications for medicine and human identity.",
+        "id": "64"
+      },
+      {
+        "title": "The Immortal Life of Henrietta Lacks",
+        "author": "Rebecca Skloot",
+        "genre": [
+          "Scientific",
+          "Biography"
+        ],
+        "language": "English",
+        "century": "21st",
+        "pageCount": "400",
+        "description": "A biography that tells the story of Henrietta Lacks, whose cancer cells were taken without her knowledge and became one of the most important tools in medical research.",
+        "id": "65"
+      },
+      {
+        "title": "The Emperor of All Maladies",
+        "author": "Siddhartha Mukherjee",
+        "genre": [
+          "Scientific",
+          "Biography"
+        ],
+        "language": "English",
+        "century": "21st",
+        "pageCount": "600",
+        "description": "A biography that chronicles the history of cancer, from its earliest documented cases to the latest advances in treatment and research.",
+        "id": "66"
+      },
+      {
+        "title": "The Man Who Mistook His Wife for a Hat",
+        "author": "Oliver Sacks",
+        "genre": [
+          "Scientific",
+          "Biography"
+        ],
+        "language": "English",
+        "century": "20th",
+        "pageCount": "256",
+        "description": "A collection of case studies that explore various neurological disorders and the unique experiences of patients, highlighting the complexity and diversity of the human brain.",
+        "id": "67"
+       },
+      {
+        "title": "The Body Keeps the Score",
+        "author": "Bessel van der Kolk",
+        "genre": [
+          "Scientific",
+          "Psychological"
+        ],
+        "language": "English",
+        "century": "21st",
+        "pageCount": "464",
+        "description": "A book that explores the impact of trauma on the body and mind, offering insights into the treatment of trauma-related disorders and the importance of understanding the connection between physical and mental health.",
+        "id": "68"
+      },
+      {
+        "title": "The Power of Habit",
+        "author": "Charles Duhigg",
+        "genre": [  
+          "Scientific",
+          "Psychological"
+        ],
+        "language": "English",
+        "century": "21st",
+        "pageCount": "400",
+        "description": "A book that explores the science of habit formation and how habits can be changed to improve personal and professional life, offering practical strategies for creating positive habits and breaking negative ones.", 
+        "id": "69"
+      }
+    ]
 }

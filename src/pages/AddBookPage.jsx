@@ -93,6 +93,9 @@ const AddBookPage = () => {
               <option value="Epic">
                 Epic
               </option>
+              <option value="Economic">
+                Economic
+              </option>
               <option value="Essay">
                 Essay
               </option>
@@ -123,6 +126,9 @@ const AddBookPage = () => {
               <option value="Poetry">
                 Poetry
               </option>
+              <option value="Political">
+                Political
+              </option>
               <option value="Psychological">
                 Psychological
               </option>
@@ -140,6 +146,9 @@ const AddBookPage = () => {
               </option>
               <option value="Science Fiction">
                 Science Fiction
+              </option>
+              <option value="Scientific">
+                Scientific
               </option>
               <option value="Social Criticism">
                 Social Criticism

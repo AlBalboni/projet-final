@@ -53,6 +53,7 @@ const BookPage = () => {
     Comedy: 0,
     Crime: 0,
     Dystopian: 0,
+    Economic: 0,
     Epic: 0,
     Essay: 0,
     Fantasy: 0,
@@ -64,12 +65,14 @@ const BookPage = () => {
     Mystery: 0,
     Philosophical: 0,
     Poetry: 0,
+    Political: 0,
     Psychological: 0,
     Religious: 0,
     Realism: 0,
     Romance: 0,
     Satire: 0,
     "Science Fiction": 0,
+    Scientific: 0,
     "Social Criticism": 0,
     Theater: 0,
     Thriller: 0,
@@ -164,6 +167,7 @@ const BookPage = () => {
     <option value="Comedy">Comedy ({genreCounts.Comedy})</option>
     <option value="Crime">Crime ({genreCounts.Crime})</option>
     <option value="Dystopian">Dystopian ({genreCounts.Dystopian})</option>
+    <option value="Economic">Economic ({genreCounts.Economic})</option>
     <option value="Epic">Epic ({genreCounts.Epic})</option>
     <option value="Essay">Essay ({genreCounts.Essay})</option>
     <option value="Fantasy">Fantasy ({genreCounts.Fantasy})</option>
@@ -175,12 +179,14 @@ const BookPage = () => {
     <option value="Mystery">Mystery ({genreCounts.Mystery})</option>
     <option value="Philosophical">Philosophical ({genreCounts.Philosophical})</option>
     <option value="Poetry">Poetry ({genreCounts.Poetry})</option>
+    <option value="Political">Political ({genreCounts.Political})</option>
     <option value="Psychological">Psychological ({genreCounts.Psychological})</option>
     <option value="Religious">Religious ({genreCounts.Religious})</option>
     <option value="Realism">Realism ({genreCounts.Realism})</option>
     <option value="Romance">Romance ({genreCounts.Romance})</option>
     <option value="Satire">Satire ({genreCounts.Satire})</option>
     <option value="Social Criticism">Social Criticism ({genreCounts["Social Criticism"]})</option>
+    <option value="Scientific">Scientific ({genreCounts.Scientific})</option>
     <option value="Science Fiction">Science Fiction ({genreCounts["Science Fiction"]})</option>
     <option value="Theater">Theater ({genreCounts.Theater})</option>
     <option value="Thriller">Thriller ({genreCounts.Thriller})</option>
