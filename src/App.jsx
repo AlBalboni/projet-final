@@ -63,8 +63,7 @@ const App = () => {
       /> 
       <Route 
         path="/books/:id/reviews" 
-        element={<BookReviewsPage />} 
-        action={addReviewAction}
+        element={<BookReviewsPage />}
         errorElement={<NotFoundPage />}
         loader={bookLoader}
       />

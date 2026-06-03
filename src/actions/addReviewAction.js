@@ -3,14 +3,18 @@ import { redirect } from "react-router-dom";
 const addReviewAction = async ({ request, params }) => {
   const REVIEW_URL =
     import.meta.env.VITE_REVIEW_API_URL;
+{/*Creates reviews only if book has an id*/}
+  if (!params.id) {
+    throw new Error("Book ID is missing");
+  }
 
   const formData = await request.formData();
-
-  const errors = {};
 
   const reviewer = formData.get("reviewer");
   const rating = formData.get("rating");
   const comment = formData.get("comment");
+
+  const errors = {};
 
   if (!reviewer?.trim()) {
     errors.reviewer = "Reviewer name is required.";
@@ -29,7 +33,7 @@ const addReviewAction = async ({ request, params }) => {
   }
 
   const newReview = {
-    bookId: params.id,
+    bookId: String(params.id),
     reviewer,
     rating,
     comment,

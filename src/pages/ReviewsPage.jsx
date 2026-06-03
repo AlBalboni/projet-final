@@ -48,12 +48,14 @@ const ReviewsPage = () => {
     fetchData();
   }, [REVIEW_URL, BOOK_URL]);
 
+{/*used AI to fix a bug in the web, when a book hasnt got a review it throws an error */}
   const getBook = (bookId) => {
-    return books.find(
-      (book) =>
-        book.id.toString() ===
-        bookId?.toString()
-    );
+    if (!bookId) return undefined;
+
+    return books.find((book) => {
+      if (!book?.id) return false;
+      return String(book.id) === String(bookId);
+    });
   };
 
   return (
@@ -65,9 +67,10 @@ const ReviewsPage = () => {
 
         <div className="space-y-6">
           {reviews.length > 0 ? (
-            reviews.map((review) => {
-              const book =
-                getBook(review.bookId);
+            reviews
+              .filter((review) => review?.id) // remove corrupted reviews
+              .map((review) => {
+                const book = getBook(review.bookId);
 
               return (
                 <div
@@ -78,8 +81,8 @@ const ReviewsPage = () => {
                     to={`/books/${review.bookId}`}
                     className="text-2xl font-bold hover:text-blue-500"
                   >
-                    {book?.title ||
-                      "Unknown Book"}
+                    {book ? book.title : 
+                    "Unknown Book (deleted or invalid)"}
                   </Link>
 
                   <h3 className="text-blue-600 font-semibold mt-2">
