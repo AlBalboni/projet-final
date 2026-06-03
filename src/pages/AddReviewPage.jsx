@@ -42,12 +42,14 @@ return (
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">Rating</label>
               <input
-                type="text"
+                type="number"
                 id="rating"
                 name="rating"
                 className="border rounded w-full py-2 px-3 mb-2"
-                placeholder="Rating (1-5)"
+                placeholder="Rating (1-5) ⭐"
                 required
+                min="1"
+                max="5"
                 defaultValue={data.rating}
               />
             </div>

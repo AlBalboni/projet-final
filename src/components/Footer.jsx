@@ -44,10 +44,24 @@ const Footer = () => {
             </Link>
 
             <Link
+              to="/reviews"
+              className="hover:text-blue-400 transition"
+            >
+              Reviews
+            </Link>
+
+            <Link
               to="/favorite-books"
               className="hover:text-blue-400 transition"
             >
               Favorites
+            </Link>
+            
+            <Link
+              to="/add-books"
+              className="hover:text-blue-400 transition"
+            >
+              Add Book
             </Link>
 
           </div>
