@@ -1,6 +1,8 @@
 import { Form } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const EditBookPage = () => {
 const data = useLoaderData();
@@ -17,6 +19,17 @@ const addGenreField = () => {
 };
 
 return (
+<>
+  <section>
+    <div className="container m-auto py-6 px-6">
+      <Link
+        to={`/books/${data.id}`}
+        className="text-blue-500 hover:text-blue-600 flex items-center"
+      >
+        <FaArrowLeft className="mr-2" /> Get back to book
+      </Link>
+    </div>
+  </section>
   <section className="bg-blue-50">
     <div className="container m-auto max-w-2xl py-24">
       <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
@@ -257,6 +270,7 @@ return (
         </div>
       </div>
     </section>
+  </>
   );
 };
 

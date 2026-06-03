@@ -1,5 +1,6 @@
 import { useLoaderData, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const BookReviewsPage = () => {
   const book = useLoaderData();
@@ -29,6 +30,17 @@ const BookReviewsPage = () => {
   }, [REVIEW_URL, book.id]);
 
   return (
+    <>
+      <section>
+        <div className="container m-auto py-6 px-6">
+          <Link
+            to={`/books/${book.id}`}
+            className="text-blue-500 hover:text-blue-600 flex items-center"
+          >
+            <FaArrowLeft className="mr-2" /> Get back to book
+          </Link>
+        </div>
+      </section>
     <section className="bg-blue-50 min-h-screen py-10 px-6">
       <div className="container max-w-3xl mx-auto">
         <div className="bg-white rounded-xl shadow-md p-8">
@@ -76,6 +88,7 @@ const BookReviewsPage = () => {
         </div>
       </div>
     </section>
+</>
   );
 };
 
