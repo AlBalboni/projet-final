@@ -1,3 +1,4 @@
+{/*BookListItem is responsible for displaying the books*/}
 import { useState } from "react";
 import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -14,6 +15,7 @@ const BookListItem = ({ book }) => {
     return favorites.includes(book.id.toString());
   });
 
+{/*toggle favorite has the function to add/remove books from favorites*/}
 const toggleFavorite = () => {
   const favorites =
     JSON.parse(localStorage.getItem("favorites")) || [];

@@ -1,3 +1,4 @@
+{/*BookList is mainly used for the sorting and searching function*/}
 import BookListItem from "./BookListItem";
 import { useEffect, useState } from "react";
 import Spinner from "./Spinner";

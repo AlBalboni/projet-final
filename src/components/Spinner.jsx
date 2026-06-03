@@ -1,3 +1,4 @@
+{/*File for the spinner. This spinner will act as a charging mechanism every time the API is being accessed. So for books and reviews*/}
 import { ClipLoader } from "react-spinners";
 
 const Spinner = ({ loading }) => {

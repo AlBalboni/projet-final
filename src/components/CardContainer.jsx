@@ -1,3 +1,4 @@
+{/*Card Container at the home page shows books to browse and to add books*/}
 import { Link } from "react-router-dom";
 import Card from "./Card";
 import { PiBooks } from "react-icons/pi";
