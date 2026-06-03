@@ -33,7 +33,8 @@ projet-final/
 │   └── _redirects        # static assets 
 ├── src/                  # source code
 │   └── actions/
-│       ├── addBookAction.js        
+│       ├── addBookAction.js    
+│       ├── addReviewAction.js    
 │       ├── deleteBookAction.js
 │       └── editBookAction.js
 │   └── assets/
@@ -54,6 +55,7 @@ projet-final/
 │       └── bookLoader.js
 │   └── pages/
 │       ├── AddBookPage.jsx
+│       ├── AddReviewPage.jsx
 │       ├── BookDetailPage.jsx
 │       ├── BookPage.jsx
 │       ├── BookReviewsPage.jsx
